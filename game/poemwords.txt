@@ -1,6 +1,6 @@
 #File format: word,sPoint,nPoint,yPoint
 
-#Sayori's winning words
+#Satori's winning words
 happiness,3,2,1
 sadness,3,2,1
 death,3,1,2
@@ -89,8 +89,18 @@ misery,3,1,2
 treasure,3,2,1
 bliss,3,2,1
 memories,3,2,1
+fight,2,3,1
+greed,1,3,2
+rage,3,2,1
+lust,2,3,1
+hate,2,3,1
+bad,2,3,1
+forever,3,1,2
+hug,3,1,2
+why,3,1,2
 
-#Natsuki's words
+
+#Natsuko's words
 cute,2,3,1
 fluffy,2,3,1
 pure,1,3,2
@@ -140,12 +150,11 @@ games,2,3,1
 socks,2,3,1
 hair,2,3,1
 playground,2,3,1
-nightgown,1,3,2
+pajamas,1,3,2
 blanket,1,3,2
 milk,2,3,1
 pout,2,3,1
 anger,2,3,1
-papa,2,3,1
 valentine,2,3,1
 mouse,1,3,2
 whistle,2,3,1
@@ -153,8 +162,24 @@ boop,2,3,1
 bunny,2,3,1
 anime,2,3,1
 jump,2,3,1
+play,2,3,1
+racecar,3,2,1
+shoe,2,3,1
+donut,3,2,1
+ball,2,3,1
+big,1,3,2
+dog,1,2,3
+punch,3,2,1
+skateboard,3,2,1
+bike,2,3,1
+soda,2,3,1
+climb,3,2,1
+cream,2,3,1
+flip,1,3,2
+girl,1,3,2
+momma,3,2,1
 
-#Yuri's words
+#Yuuri's words
 determination,1,1,3
 suicide,2,1,3
 imagination,2,1,3
@@ -233,3 +258,18 @@ breathe,1,2,3
 captive,2,1,3
 desire,1,2,3
 graveyard,2,1,3
+cuffling,1,2,3
+watch,1,2,3
+dapper,1,2,3
+royal,2,1,3
+arson,2,1,3
+inferno,2,1,3
+volcano,2,1,3
+insatiable,2,2,3
+bat,1,1,3
+wolf,1,1,3
+moon,1,1,3
+vampire,1,1,3
+violet,1,2,3
+arousal,2,2,3
+aristocrat,2,2,3
