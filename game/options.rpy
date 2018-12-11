@@ -146,8 +146,10 @@ init python:
     build.archive("mod_assets",build.name)
 
     # folder / files to put in archives
-    build.classify("game/mod_assets/**","x64a")
-    build.classify('game/**.rpyc',"scripts")
+    build.classify("game/gui/**","mod_assets")
+    build.classify("game/mod_assets/**","mod_assets")
+    build.classify('game/**.rpyc',"x64a")
+    build.classify('game/**.txt',"x64a")
 
     # stuff to ignore
     build.classify('**~', None)
