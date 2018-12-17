@@ -22,95 +22,110 @@ init python:
 #Define all of the poems
     poem_y1 = Poem(
     author = "yuri",
-    title = "Ghost Under the Light",
+    title = "Thirst",
     text = """\
-The tendrils of my hair illuminate beneath the amber glow.
-Bathing.
-It must be this one.
-The last remaining streetlight to have withstood the test of time.
-the last yet to be replaced by the sickening blue-green hue of the future.
-I bathe. Calm; breathing air of the present but living in the past.
-The light flickers.
-I flicker back."""
+My mouth is parched.
+Desperate, I must rehydrate.
+I take a glass from the cupboard. I open the ice box.
+Shrinking away from the artificial light, I reach for a pitcher of water.
+I close the door, and relish the return of the dark.
+I fill my glass and drink.
+Still thirsty, I fill the glass again. Then once more.
+I empty the pitcher. I remain unsatisfied.
+I refill the pitcher, only to drain it again
+Every sip only leaves me thirstier.
+Insatiable.
+I must replenish.
+Or go insane.
+Candle on the table
+Match box in my hand
+The flame flickers
+I flicker back
+At last, my thirst is quenched."""
     )
 
     poem_y2 = Poem(
     author = "yuri",
-    title = "The Raccoon",
+    title = "Phoenix",
     text = """\
-It happened in the dead of night while I was slicing bread for a guilty snack.
-My attention was caught by the scuttering of a raccoon outside my window.
-That was, I believe, the first time I noticed my strange tendencies as an unordinary human.
-I gave the raccoon a piece of bread, my subconscious well aware of the consequences.
-Well aware that a raccoon that is fed will always come back for more.
-The enticing beauty of my cutting knife was the symptom.
-The bread, my hungry curiosity.
-The raccoon, an urge.
-
-The moon increments its phase and reflects that much more light off of my cutting knife.
-The very same light that glistens in the eyes of my raccoon friend.
-I slice the bread, fresh and soft. The raccoon becomes excited.
-Or perhaps I'm merely projecting my emotions onto the newly-satisfied animal.
-
-The raccoon has taken to following me.
-You could say that we've gotten quite used to each other.
-The raccoon becomes hungry more and more frequently, so my bread is always handy.
-Every time I brandish my cutting knife, the raccoon shows me its excitement.
-A rush of blood. Classic Pavlovian conditioning. I slice the bread.
-And I feed myself again."""
+Immortal Flame
+Tearing through the sky
+Resplendent
+Aristocratic Inferno
+Spreading her smoldering wings
+Destruction
+Fearless, I hold out my arm
+I see the beauty
+The Phoenix perches
+It hurts. But I will heal
+The Phoenix seeks me out
+I am her only friend
+I embrace her
+Her warmth enfolds me
+Searing
+My beast
+My desire
+My passion
+The Phoenix can never be tamed.
+The sun is where she dwells.
+But when I hold out my arm and call.
+She comes to me.
+And ignites my soul once more."""
     )
 
     poem_y3 = Poem(
     author = "yuri",
     title = "Beach",
     text = """\
-A marvel millions of years in the making.
-Where the womb of Earth chaotically meets the surface.
-Under a clear blue sky, an expanse of bliss--
-But beneath gray rolling clouds, an endless enigma.
-The easiest world to get lost in
-Is one where everything can be found.
-
-One can only build a sand castle where the sand is wet.
-But where the sand is wet, the tide comes.
-Will it gently lick at your foundations until you give in?
-Or will a sudden wave send you crashing down in the blink of an eye?
-Either way, the outcome is the same.
-Yet we still build sand castles.
-
-I stand where the foam wraps around my ankles.
-Where my toes squish into the sand.
-The salty air is therapeutic.
-The breeze is gentle, yet powerful.
-I sink my toes into the ultimate boundary line, tempted by the foamy tendrils.
-Turn back, and I abandon my peace to erode at the shore.
-Drift forward, and I return to Earth forevermore."""
+Marvelous Creation
+Endless Horizon
+Shimmering like an infinite pool of diamonds.
+Teeming with life. Beauty abundant.
+A vast population of otherworldly organisms.
+Majestic, the waves roll against the shore.
+Powerful as they rise and fall; curl and crash.
+See the water dance?
+Whirlpools. Splashing. Reflecting.
+A soft strip of warm squishy sand against a wild raging sea.
+An unpredictable void of black water.
+The power to start life. The power to end life.
+Merciful and Merciless.
+The sun blazes. I am envious.
+The sun sets. I must rest.
+The ocean bids me farewell as I retreat
+Knowing I will return tomorrow
+When the sun climbs high again."""
     )
 
     poem_y3b = Poem(
     author = "yuri",
-    title = "Ghost Under the Light pt. 2",
+    title = "Thirst pt. 2",
     text = """\
-The tendrils of my hair illuminate beneath the amber glow.
-Bathing.
-In the distance, a blue-green light flickers.
-A lone figure crosses its path - a silhouette obstructing the eerie glow.
-My heart pounds. The silhouette grows. Closer. Closer.
-I open my umbrella, casting a shadow to shield me from visibility.
-But I am too late.
-He steps into the streetlight. I gasp and drop my umbrella.
-The light flickers. My heart pounds. He raises his arm.
+My mouth is parched.
+Desperate, I must rehydrate.
+Taking a glass from the cupboard, I open the icebox door.
+A silhouette appears between me and the artificial light.
+My heart pounds. I shrink away.
+The silhouette grows closer.
 
-Time stops.
+I reach for my match box. With a harsh stroke, I summon the flame.
+The light of the candle is my shield.
+But it's too late.
+She steps into my light.
+The flame flickers. My heart pounds. Her eyes glow.
 
-The only indication of movement is the amber light flickering against his outstretched arm.
-The flickering light is in rhythm with the pounding of my heart.
+Time stops
+
+She remains still. Yet her eyes dance with the flame.
+The flickering flame is in rhythm with the pounding of my heart.
 Teasing me for succumbing to this forbidden emotion.
-Have you ever heard of a ghost feeling warmth before?
-Giving up on understanding, I laugh.
-Understanding is overrated.
-I touch his hand. The flickering stops.
-Ghosts are blue-green. My heart is amber."""
+Have you ever heard of a flame being thirsty?
+I laugh, embracing my insanity.
+Normality is overrated.
+I blow out the candle.
+Her eyes continue to flicker.
+
+At last, my thirst is quenched."""
     )
 
     poem_y22 = Poem(
@@ -189,54 +204,57 @@ unreleased tension experienced by my entire body. Her Third Eye is drawing me cl
 
     poem_n1 = Poem(
     author = "natsuki",
-    title = "Eagles Can Fly",
+    title = "Cars Can Race",
     text = """\
-Monkeys can climb
-Crickets can leap
-Horses can race
-Owls can seek
-Cheetahs can run
-Eagles can fly
-People can try
-But that's about it."""
+Dogs can sniff and dogs can bark
+Cats can see in the dark
+Lions roar to show they're king
+Bees possess a painful sting
+Sharks can swim and can attack
+Cars can race around a track
+
+Amazing creatures! Amazing things!
+See them all around you
+Would they be just as impressed
+To see the things that you do?
+You think you're just as good
+You're not the type to quit
+I suppose it couldn't hurt to try
+But, really...that's about it."""
     )
 
     poem_n2 = Poem(
     author = "natsuki",
-    title = "Amy Likes Spiders",
+    title = "Trevor Likes Dolls",
     text = """\
-You know what I heard about Amy?
-Amy likes spiders.
-Icky, wriggly, hairy, ugly spiders!
-That's why I'm not friends with her.
+You know what I heard?
+Trevor likes Dolls
+Not baseball caps, comic books or basket balls
+Nope. Trevor likes Dolls.
 
-Amy has a cute singing voice.
-I heard her singing my favorite love song.
-Every time she sang the chorus, my heart would pound to the rhythm of the words.
-But she likes spiders.
-That's why I'm not friends with her.
+Trevor has a lot of pals
+He spends time with them all
+They run, they play, they chat all day
+Probably about Dolls.
 
-One time, I hurt my leg really bad.
-Amy helped me up and took me to the nurse.
-I tried not to let her touch me.
-She likes spiders, so her hands are probably gross.
-That's why I'm not friends with her.
+Trevor came to me one day
+To invite me to the mall
+I'd hoped we'd go check out the babes
+But he just bought a Doll
 
-Amy has a lot of friends.
-I always see her talking to people.
-She probably talks about spiders.
-What if her friends start to like spiders too?
-That's why I'm not friends with her.
+It doesn't matter if he's sweet
+Or if his room is always neat
+It doesn't matter if he's kind
+Or if he's got a brilliant mind
+It doesn't matter that he's fun
+And he's not hurting anyone...
+But I hate dolls! And Trevor, too!
+And if I hate them, so should you!
 
-It doesn't matter if she has other hobbies.
-It doesn't matter if she keeps it private.
-It doesn't matter if it doesn't hurt anyone.
-
-It's gross.
-She's gross.
-The world is better off without spider lovers.
-
-And I'm gonna tell everyone."""
+Trevor is a weirdo
+He's girly and he's weak
+No one should ever be friends with
+Such a gross, sick freak!!!"""
     )
 
     poem_n2b = Poem(
@@ -261,73 +279,107 @@ b3AgbXlzZWxmLg=="""
 
     poem_n3 = Poem(
     author = "natsuki",
-    title = "I'll Be Your Beach",
+    title = "In the Sea With Me",
     text = """\
-Your mind is so full of troubles and fears
-That diminished your wonder over the years
-But today I have a special place
-A beach for us to go.
+The mood is grey and dreary
+I'm bored and need some sun
+The day's too nice to feel this weary
+Come with me, let's have some fun
 
-A shore reaching beyond your sight
-A sea that sparkles with brilliant light
-The walls in your mind will melt away
-Before the sunny glow.
+Let's hit the beach, the two of us
+Play in the sand with me!
+Is this feeling new to us?
+Or is it just the salty sea?
 
-I'll be the beach that washes your worries away
-I'll be the beach that you daydream about each day
-I'll be the beach that makes your heart leap
-In a way you thought had left you long ago.
+Surf's up
+Waves rise
+It should come as no surprise
 
-Let's bury your heavy thoughts in a pile of sand
-Bathe in sunbeams and hold my hand
-Wash your insecurities in the salty sea
-And let me see you shine.
+Tides roll
+Wipe out
+I'm feeling it without a doubt
 
-Let's leave your memories in a footprint trail
-Set you free in my windy sail
-And remember the reasons you're wonderful
-When you press your lips to mine.
+Whenever you're lonely
+You know just where I'll be
+This love is grand
+So take my hand
+I'll set you free
+In the sea with me
 
-I'll be the beach that washes your worries away
-I'll be the beach that you daydream about each day
-I'll be the beach that makes your heart leap
-In a way you thought had left you long ago.
+Life's been so much brighter
+Since I walked this beach with you
+The sun feels warmer; Lighter
+And the ocean's never been so blue
 
-But if you let me by your side
-Your own beach, your own escape
-You'll learn to love yourself again."""
+The sun sets over the tide
+The birds have silenced their tune
+We spend the night lying side by side
+Watching the silvery moon
+
+Warm nights
+Big sky
+Starlight shining in your eyes
+
+Cool breeze
+Whales sing
+For you, I will do anything
+
+If you need me suddenly
+I'll be there in a hurry
+This is not a game
+Just call my name
+I'll set you free
+We'll happily
+Forever be
+Eternally...
+
+
+
+Frolicking in the sea
+Together, just you and me."""
     )
 
     poem_n3b = Poem(
     author = "natsuki",
-    title = "Because You",
+    title = "Why Me",
     text = """\
-Tomorrow will be brighter with me around
-But when today is dim, I can only look down.
-My looking is a little more forward
-Because you look at me.
+In a world where beauty abounds
+You find joy in looking down
+You could gaze at a mighty tree
+Why instead do you look at me?
 
-When I want to say something, I say it with a shout!
-But my truest feelings can never come out.
-My words are a little less empty
-Because you listen to me.
 
-When something is above me, I reach for the stars.
-But when I feel small, I don't get very far.
-My standing is a little bit taller
-Because you sit with me.
+Now tell me if you think I'm wrong
+But silence is a pleasant song
+What is wrong inside your head
+That you prefer my voice instead?
 
-I believe in myself with all of my heart.
-But what do I do when it's torn all apart?
-My faith is a little bit stronger
-Because you trusted me.
 
-My pen always puts my feelings to the test.
-I'm not a good writer, but my best is my best.
-My poems are a little bit dearer
-Because you think of me.
+You could walk tall, your head held high
+Reach on up and touch the sky
+But the heavens you can barely see
+Because you sit down here with me
 
-Because you, because you, because you."""
+
+I may not be perfect, but I'm still pretty tough
+Though it isn't always apparent enough
+My patience sometimes goes astray
+Yet you respect me anyway
+
+
+Clever writing is what I seek
+Funny rhymes and tongue-in-cheek
+You make me confident with my style
+When my poems make you smile
+
+
+Life is now a jubilee
+
+Because
+You
+Believe
+In
+Me."""
     )
 
     poem_n23 = Poem(
@@ -358,104 +410,164 @@ I'm counting on you. Thanks for reading."""
 
     poem_s1 = Poem(
     author = "sayori",
-    title = "Dear Sunshine",
+    title = "Morning Person",
     text = """\
-The way you glow through my blinds in the morning
-It makes me feel like you missed me.
-Kissing my forehead to help me out of bed.
-Making me rub the sleepy from my eyes.
-
-Are you asking me to come out and play?
-Are you trusting me to wish away a rainy day?
-I look above. The sky is blue.
-It's a secret, but I trust you too.
-
-If it wasn't for you, I could sleep forever.
-But I'm not mad.
-
-I want breakfast."""
+Good morning!
+How are you?
+I hope that you slept well!
+Let's see a smile on your face!
+This is the kind of person I wish I was in the morning.
+But I'm not.
+Because I'm not a morning person.
+Good morning?
+Whatever.
+I couldn't sleep all night!
+How can I wake up with a smile
+When the first thing I want to do is fight?
+I wish I was a morning person.
+But I guess I'm just a Grumpy Gus.
+I wish I could wake up with a warm feeling
+But the first thing out of my mouth is a cuss
+No point in complaining though.
+Sleep will have to wait.
+I'm up now.
+Time for breakfast."""
     )
 
     poem_s2 = Poem(
     author = "sayori",
-    title = "Bottles",
+    title = "Sad Thoughts",
     text = """\
-I pop off my scalp like the lid of a cookie jar.
-It's the secret place where I keep all my dreams.
-Little balls of sunshine, all rubbing together like a bundle of kittens.
-I reach inside with my thumb and forefinger and pluck one out.
-It's warm and tingly.
-But there's no time to waste! I put it in a bottle to keep it safe.
-And I put the bottle on the shelf with all of the other bottles.
-Happy thoughts, happy thoughts, happy thoughts in bottles, all in a row.
-
-My collection makes me lots of friends.
-Each bottle a starlight to make amends.
-Sometimes my friend feels a certain way.
-Down comes a bottle to save the day.
-
-Night after night, more dreams.
-Friend after friend, more bottles.
-Deeper and deeper my fingers go.
-Like exploring a dark cave, discovering the secrets hiding in the nooks and crannies.
-Digging and digging.
-Scraping and scraping.
-
-I blow dust off my bottle caps.
-It doesn't feel like time elapsed.
-My empty shelf could use some more.
-My friends look through my locked front door.
-
-Finally, all done. I open up, and in come my friends.
-In they come, in such a hurry. Do they want my bottles that much?
-I frantically pull them from the shelf, one after the other.
-Holding them out to each and every friend.
-Each and every bottle.
-But every time I let one go, it shatters against the tile between my feet.
-Happy thoughts, happy thoughts, happy thoughts in shards, all over the floor.
-
-They were supposed to be for my friends, my friends who aren't smiling.
-They're all shouting, pleading. Something.
-But all I hear is echo, echo, echo, echo, echo
-Inside my head."""
+I pop my scalp off the top of my head like the lid of a cookie jar.
+It's time to clean up in there.
+Happy Thoughts and Angry Thoughts
+All wriggling in the dark crevices of my mind.
+The Happy Thoughts are soft and warm. They rub against each other like a bundle of kittens.
+The Angry Thoughts are prickly to the touch. The prickles dig into my head and become stuck.
+The Angry Thoughts are mean to the Happy Thoughts
+They never get along
+So, I pluck out the Happy Thoughts.
+Since the Angry Thoughts are way too strong
+I put the Happy Thoughts into bottles
+Where they stay safe and sound.
+I keep them all up on a shelf
+For when my friends come into town.
+The Angry Thoughts get stronger.
+The prickles then grow longer.
+Angry Thoughts, Angry Thoughts, Angry Thoughts
+In my head, they glow.
+The Happy Thoughts, they tingle
+Their numbers begin to dwindle
+Happy Thoughts, Happy Thoughts, Happy Thoughts
+In bottles all in a row.
+Night after night, more dreams
+Friend after friend, more bottles
+Deeper and deeper my fingers go
+Searching all the nooks and crannies
+The Angry Thoughts eventually die
+But, when they do, they become hard and cold.
+I don't like the way they feel.
+Sad Thoughts, Sad Thoughts, Sad Thoughts.
+Forever embedded in my mind.
+Dust settles onto my bottle caps
+It doesn't feel like time elapsed
+I know my friends are all distraught
+They each could use a Happy Thought
+I check my head, but find no more
+My friends look through my locked front door
+I open the door and in they come.
+Do they really want my bottles that bad?
+I pull them down from the shelf and give them to each one of my friends.
+Each one of my bottles.
+But when I let the bottles go, they slip out of my hands and shatter on the tile between my feet.
+Happy Thoughts, Happy Thoughts, Happy Thoughts
+In shards all over the floor
+Angry Thoughts, Angry Thoughts, Angry Thoughts
+Banging on my door
+Sad Thoughts, Sad Thoughts, Sad Thoughts
+Eating at my core
+My friends are yelling. Pleading.
+My heart is pounding. Bleeding.
+I want the Angry Thoughts to go away.
+I want the Happy Thoughts instead.
+But all I hear are the Sad Thoughts going
+Echo, echo, echo, echo, echo
+On repeat, inside my head."""
     )
 
     poem_s3 = Poem(
     author = "sayori",
-    title = "%",
+    title = "#",
     text = """\
-Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of my head. Get out of
-Get.
-Out.
-Of.
-My.
-Head.\n\n\n
-Get out of my head before I do what I know is best for you.
-Get out of my head before I listen to everything she said to me.
-Get out of my head before I show you how much I love you.
-Get out of my head before I finish writing this poem.\n\n\n\n\n\n\n
-But a poem is never actually finished.
-It just stops moving."""
+Whatever you say, I'll do
+Without hesitation.
+Without a second thought.
+Without question.
+
+
+I find it so unnerving
+That I am undeserving
+
+
+I can't finish this poem.
+I can only do whatever you say
+
+Whatever you say Whatever you say Whatever you say Whatever you say Whatever you say Whatever you say Whatever you say Whatever you say
+Whatever you say Whatever you say Whatever you say Whatever you say Whatever you say Whatever you say Whatever you say Whatever you say
+Whatever you say Whatever you say Whatever you say Whatever you say Whatever you say Whatever you say Whatever you say Whatever you say
+Whatever you say Whatever you say Whatever you say Whatever you say Whatever you say Whatever you say Whatever you say Whatever you say
+Whatever you say Whatever you say Whatever you say Whatever you say Whatever you say Whatever you say Whatever you say Whatever you say
+W
+h
+a
+t
+e
+v
+e
+r
+
+Y
+o
+u
+
+S
+a
+y
+
+
+
+
+Until I stop moving."""
     )
 
     poem_m1 = Poem(
     author = "monika",
-    title = "Hole in Wall",
+    title = "Looking Out",
     text = """\
-It couldn't have been me.
-See, the direction the spackle protrudes.
-A noisy neighbor? An angry boyfriend? I'll never know. I wasn't home.
-I peer inside for a clue.
-No! I can't see. I reel, blind, like a film left out in the sun.
-But it's too late. My retinas.
-Already scorched with a permanent copy of the meaningless image.
-It's just a little hole. It wasn't too bright.
-It was too deep.
-Stretching forever into everything.
-A hole of infinite choices.
-I realize now, that I wasn't looking in.
-I was looking out.
-And he, on the other side, was looking in."""
+I didn't do that.
+It wasn't there when I left either.
+Someone else must've done it.
+It's just a little hole.
+Illumination pours through.
+Curiosity tells me to take a peek.
+Existential fear keeps me from succumbing to curiosity
+For weeks, I ignore the hole in the wall
+I occasionally glance at it, but I will not look inside.
+What am I afraid of?
+I hear things coming from the other side.
+Terrible screeching sounds. Flashing lights.
+Time goes on. My curiosity becomes hungrier.
+I warn myself to not look inside.
+I tell myself I won't like what I will see.
+Don't do it.
+Don't do it.
+Don't do it.
+Finally, I can take no more.
+The curiosity consumes me
+I cave in and peek inside.
+There you are.
+I see you.
+Peeking back at me."""
     )
 
     poem_m21 = Poem(
@@ -479,28 +591,36 @@ Swallowing my fears, I brandish my pen."""
 
     poem_m2 = Poem(
     author = "monika",
-    title = "Save Me",
+    title = "Play Me",
     text = """\
-The colors, they won't stop.
-Bright, beautiful colors
-Flashing, expanding, piercing
+Your colors, though bright and beautiful, blind me
 Red, green, blue
-An endless
-cacophany
-Of meaningless
-noise
-
-
-The noise, it won't stop.
-Violent, grating waveforms
-Squeaking, screeching, piercing
+They flash;  expanding     across     the     universe
+They won't stop
+Your noise
+is endlessly meaningless
+It squeaks violently; screeching    across                 time
+Piercing
+through my ears
 Sine, cosine, tangent
-    Like playing a chalkboard on a turntable
-        Like playing a vinyl on a pizza crust
+An endless cacophony
+of  grating  waveforms
+
+ Like dragging a fork across a dinner plate
+             Like playing a chalkboard on a turntable
+
 An endless
-poem
-Of meaningless\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n
-Load Me
+Poem
+of meaningless
+
+
+
+
+
+
+
+
+Quit Me
     """
     )
 
@@ -533,49 +653,161 @@ Delete Her
 
     poem_m3 = Poem(
     author = "monika",
-    title = "The Lady who Knows Everything",
+    title = "The Tale of the Ignorant Hermit",
     text = """\
-An old tale tells of a lady who wanders Earth.
-The Lady who Knows Everything.
-A beautiful lady who has found every answer,
-All meaning,
-All purpose,
-And all that was ever sought.
+There once was a Hermit who lived in cave.
+The cave was part of a small island
+The island was on a lake
+The lake was on a hill
+The hill was tucked away in the deepest part of the forest
+The forest was hidden behind a mighty mountain range
 
-And here I am,
+And the Hermit was safe
+He wanted for nothing
+He worried about nothing
+He knew nothing of the world outside his seclusion
 
 
-              a feather
 
 
-Lost adrift the sky, victim of the currents of the wind.
 
-Day after day, I search.
-I search with little hope, knowing legends don't exist.
-But when all else has failed me,
-When all others have turned away,
-The legend is all that remains - the last dim star glimmering in the twilit sky.
+And he was happy
 
-Until one day, the wind ceases to blow.
-I fall.
-And I fall and fall, and fall even more.
-Gentle as a feather.
-A dry quill, expressionless.
 
-But a hand catches me between the thumb and forefinger.
-The hand of a beautiful lady.
-I look at her eyes and find no end to her gaze.
 
-The Lady who Knows Everything knows what I am thinking.
-Before I can speak, she responds in a hollow voice.
-"I have found every answer, all of which amount to nothing.
-There is no meaning.
-There is no purpose.
-And we seek only the impossible.
-I am not your legend.
-Your legend does not exist."
 
-And with a breath, she blows me back afloat, and I pick up a gust of wind."""
+The Hermit lived in his cave on his island on the lake on the hill in the woods behind the mountains for as long as he could remember
+
+                                        The Hermit  didn't know   he was   ignorant
+
+
+
+
+And he was happy
+
+
+
+
+
+
+One day, the Hermit looked up at the sky
+and he spotted
+
+      a               feather
+
+
+
+drifting             carelessly             in       the             breeze
+
+
+
+For the first time in the Hermit's life
+He was
+          curious
+
+
+
+
+He reached out and took the feather between his thumb and forefinger
+
+
+
+
+ Little feather
+             Little feather
+
+   Such a journey you have made!
+
+     What brings you to my cave
+On my island
+                               On my lake
+
+
+Atop my hill  in     t  he       w  o       o        d      s
+
+                                                  Behind     the                 mountains   ?
+
+
+
+What tales have you to share?
+
+
+
+
+The feather quivered     in response
+
+
+
+
+                 It matters   not           where   you've been
+
+
+
+
+
+It             only         matters               where       you     end   u p
+
+                                        and               what      you     learn
+
+                         along     the                way
+
+
+
+
+You, meanwhile
+                                          will       learn        nothing
+                                                                                          so long as   you  live
+
+in   th i s         cave           on  thi s          i s l a n d    on    this   l ake     atop  this   h i   ll
+
+
+in   t h  es e      w   o  o   ds          behin d     thes e    m o un t   ain   s
+
+
+
+ You    will    remain    an     I G N O R AN  T       He r  mit
+
+
+                                                            But   my  jo ur ney
+
+
+               has      just  begun
+
+
+
+With a gust of wind
+                                                the feather blows afloat again
+
+
+
+
+
+               The  Hermit    watched   the feather    climb    higher
+
+
+until it   di  s     a     pp          e   a   r            ed
+
+
+
+
+
+
+            The  Hermit    now has      k no w le d  ge    of  his   ignorance
+
+
+
+
+
+And while he    desperately   cl ing s    to his safe home     in  the  cave
+
+on the is la nd        on the lake            atop   the    hill   in th  e  woo   ds
+
+                              b e hind    t he        mou nta ins
+
+
+
+
+                                                       He no longer feels happiness."""
     )
 
     poem_m4 = Poem(
