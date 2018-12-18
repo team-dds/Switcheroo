@@ -253,7 +253,7 @@ label poem(transition=True):
                 for i in range(5):
                     if persistent.playthrough == 3:
                         #Just Monika garbage choices for Act 3
-                        s = list("Monika")
+                        s = list("Mateo")
                         for k in range(6):
                             if random.randint(0, 4) == 0:
                                 s[k] = ' '
@@ -389,7 +389,7 @@ image bg eyes:
 
 #The character stickers, defined with their animation behaviors
 image s_sticker:
-    "gui/poemgame/s_sticker_1.png"
+    "mod_assets/images/satori/satostickersmall.png"
     xoffset sayoriOffset xzoom sayoriZoom
     block:
         function randomPauseSayori
@@ -400,7 +400,7 @@ image s_sticker:
         repeat
 
 image n_sticker:
-    "gui/poemgame/n_sticker_1.png"
+    "mod_assets/images/natsuko/sticker.png"
     xoffset natsukiOffset xzoom natsukiZoom
     block:
         function randomPauseNatsuki
@@ -411,7 +411,7 @@ image n_sticker:
         repeat
 
 image y_sticker:
-    "gui/poemgame/y_sticker_1.png"
+    "mod_assets/images/yuuri/sticker1.png"
     xoffset yuriOffset xzoom yuriZoom
     block:
         function randomPauseYuri
@@ -433,7 +433,7 @@ image y_sticker_cut:
         repeat
 
 image m_sticker:
-    "gui/poemgame/m_sticker_1.png"
+    "mod_assets/images/mateo/sticker.png"
     xoffset monikaOffset xzoom monikaZoom
     block:
         function randomPauseMonika
@@ -445,21 +445,21 @@ image m_sticker:
 
 #The art shown for the sticker when hopping
 image s_sticker hop:
-    "gui/poemgame/s_sticker_2.png"
+    "mod_assets/images/satori/satostickerhappysmall.png"
     xoffset sayoriOffset xzoom sayoriZoom
     sticker_hop
     xoffset 0 xzoom 1
     "s_sticker"
 
 image n_sticker hop:
-    "gui/poemgame/n_sticker_2.png"
+    "mod_assets/images/natsuko/stickerhappy.png"
     xoffset natsukiOffset xzoom natsukiZoom
     sticker_hop
     xoffset 0 xzoom 1
     "n_sticker"
 
 image y_sticker hop:
-    "gui/poemgame/y_sticker_2.png"
+    "mod_assets/images/yuuri/sticker2.png"
     xoffset yuriOffset xzoom yuriZoom
     sticker_hop
     xoffset 0 xzoom 1
@@ -481,7 +481,7 @@ image y_sticker hopg:
     "y_sticker"
 
 image m_sticker hop:
-    "gui/poemgame/m_sticker_2.png"
+    "mod_assets/images/mateo/sticker2.png"
     xoffset monikaOffset xzoom monikaZoom
     sticker_hop
     xoffset 0 xzoom 1
