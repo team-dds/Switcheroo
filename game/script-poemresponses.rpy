@@ -701,66 +701,25 @@ label ch3_m_end:
 
 
 label ch1_n_bad:
-    n "..."
+    show natsuko 1a at t11 zorder 2
+    n 1g "...Hmm..."
     mc "...?"
-    if persistent.playthrough == 2 and renpy.random.randint(0, 2) == 0:
-        $ currentpos = get_pos()
-        stop music
-        pause 2.0
-        play sound "sfx/stab.ogg"
-        show n_blackeyes at i11 zorder 3
-        show n_eye zorder 3:
-            subpixel True
-            pos (660,250) xanchor 0.5 yanchor 0.5 zoom 0.8
-            parallel:
-                linear 2.0 rotate 720
-            parallel:
-                linear 2.0 xpos 1680
-            parallel:
-                easein 0.25 ypos 180
-                easeout 1.0 ypos 1280
-        show n_eye as n_eye2 zorder 3:
-            subpixel True
-            pos (580,260) xanchor 0.5 yanchor 0.5 zoom 0.8 rotate 180
-            parallel:
-                linear 2.0 rotate -560
-            parallel:
-                linear 2.0 xpos -440
-            parallel:
-                easein 0.10 ypos 240
-                easeout 1.0 ypos 1280
-        show blood zorder 3:
-            pos (645,255)
-        show blood as blood2 zorder 3:
-            pos (575,260)
-        pause 0.75
-        hide n_blackeyes
-        hide n_eye
-        hide n_eye2
-        hide blood
-        hide blood2
-        stop sound
-        play music "<from " + str(currentpos) + " loop 4.444>bgm/5.ogg"
-    n 2b "[player], if you're not going to take this club seriously then go home."
-    mc "W-What??"
-    mc "Harsh..."
-    n 42c "What, you expect me to believe that you actually put effort into this?"
-    n "Do you think I'm stupid?"
-    mc "I'm not a writer!"
-    mc "Maybe it's not very good, but yeah, I did put in effort."
-    mc "We all start somewhere, right?"
-    mc "If you're still proud of the first poem {i}you{/i} ever wrote, then I'd like to read it."
-    n 1o "!!"
-    mc "Painful to think about?"
-    n 1r "..."
-    n 5q "Fine."
-    n "Well, sorry."
-    n 5c "You'll get better, anyway."
-    n "I'd tell you what to improve, but you're better off just trying again."
-    mc "Fair enough..."
-    mc "Well, to each their own, I guess."
-    n 5q "Anyway, I guess I gotta share mine now..."
-    n "Knowing you, you'll probably think it's stupid."
+    n 1c "Are you..." 
+    n 5c "Are you taking this club seriously?"
+    mc "Of course I am."
+    n 1s "Right."
+    n 1e "Exactly how much effort did you put into this?"
+    mc "A lot, actually."
+    n 5k "Hey, it's cool." 
+    n "You're not a writer." 
+    n "I get it." 
+    n 3l "Cheer up. I'm sure you'll improve eventually." 
+    n 1k "I'd point out what you need to work on, but you're better off just trying again from scratch."
+    mc "Fair enough." 
+    mc "To each their own, I guess."
+    "I can see why Yuuri said Natsuko might be biased."
+    n 5w "Anyway...I guess I better show you my poem now." 
+    n 7y "I know you're gonna really like it, but try to contain yourself."
     return
 
 label ch1_n_med:
@@ -784,39 +743,41 @@ label ch1_n_med:
     return
 
 label ch1_n_good:
-    n "..."
-    mc "...?"
-    n 1t "...Okay, well let's start with the things I don't like!"
-    n "First of all, um..."
+    show natsuko 1a at t11 zorder 2
+    n 5k "..."
     mc "..."
-    "Natsuki re-reads my poem."
-    n 4c "N-Never mind. I don't feel like giving you my opinion."
-    mc "Eh? Then what's the point of sharing in the first place?"
-    mc "I wrote this when I could have been doing other things."
-    n 4r "Uu..."
-    mc "In fact, remember how I said I wanted to read your poems?"
-    mc "That's what I had in mind when writing this."
-    mc "I want to help you feel comfortable enough to share yours."
-    mc "Like Monika said."
-    n 4x "Uuuu...!"
-    n 1h "Well I would be more comfortable sharing my poem if yours was really bad!"
-    n 1w "You were supposed to show me some dumb poem and make me go 'Hah, well it's not that great but let me show you what real literature looks like!'"
-    n 1h "And you went and ruined it!"
-    n "I hope you're happy!"
-    mc "..."
-    mc "...So, in other words, you're saying you liked it?"
-    n 1o "Urk--"
-    "Natsuki's retort gets caught in her throat."
-    n 1x "Uuuuuuuuu...You're so...!"
-    n "You just...you...don't understand anything, do you?"
-    n 5q "I already told you that, you don't have to go announcing it to the world like you're all self-important!"
-    mc "Pretty sure you never actually said that..."
-    "I say that mostly to myself."
-    "Natsuki must really hate me or something."
-    "I can't figure out if it's a win or a loss that she liked my poem."
-    mc "In any case... You still need to show me yours, right?"
-    n 5s "Gr... Fine, I guess."
-    n "Only because Monika will make me if I don't."
+    n 5h "What's with this?"
+    mc "...What do you mean?"
+    n 1d "Don't play dumb now." 
+    n 3w "This wasn't written by an amateur." 
+    n 3e "You either snagged this online or Satori brought in a ringer."
+    mc "Look, I wrote this myself." 
+    mc "And it's my first time writing a poem." 
+    mc "Take it for what it's worth." 
+    mc "I have no reason to lie about this." 
+    mc "In fact, remember how I said I was interested in your poems?" 
+    mc "That's what I had in mind when I wrote this." 
+    mc "I could've been doing other things, you know."
+    show natsuko 1k
+    "Unbelieving, Natsuko looks over my poem again." 
+    "He stares at me with a suspicious expression."
+    n 7i "Alright, then...beginner's luck." 
+    n 7h "Let's see if you can do it again tomorrow."
+    mc "You seem upset that I'm accidentally good at this." 
+    mc "I just wanted to help you feel comfortable sharing your poems."
+    n 7n "...Well, thanks, [player]..." 
+    n 5n "But, I think I would've felt more comfortable sharing if yours was really bad!" 
+    n 5s "I was expecting you to show me something pathetic so I could say, 'well, it's not great, but let me show you what real writing looks like!'" 
+    n 5u "And, instead, you went and wrote something really good." 
+    n 7m "So now, I'm self-conscious about my poem."
+    mc "...Well, I'm glad to hear you liked it, but I don't want you to feel bad about your writing as a result."
+    n 7q "I...don't feel bad, per-say." 
+    n "I just wanted my poem to..." 
+    n 5r "Ah..." 
+    n 5s "Well... Never mind." 
+    n 1c "I should just show it to you."
+    mc "Might as well." 
+    mc "Mateo will make you if you don't."
     return
 
 label ch2_n_bad:
@@ -1324,15 +1285,14 @@ label ch3_n_good:
         return
 
 label ch1_s_bad:
-    s 1b "..."
-    s "...Wow!"
-    s "[player]..."
-    s 4r "Your poem is really bad!"
-    s "Ahahaha!"
-    mc "Eh?!"
-    s 4a "It's fine, it's fine~"
-    s "It's your first time."
-    s "Besides..."
+    show satori 1s at t11 zorder 2
+    s "... Hahahaha!" 
+    s "[player]..." 
+    s 7l "You know I love you..." 
+    s 10z "But this poem is really bad!"
+    mc "...!" 
+    mc "What the actual hell, man?!"
+    mc "I mean...I love you too...but damn..."
     label ch1_s_shared:
         s 10r "Ahahaha! I'm just happy that you actually wrote one."
         s 1d "It shows that you're taking this seriously."
@@ -1357,18 +1317,36 @@ label ch1_s_bad:
         return
 
 label ch1_s_med:
-    s "..."
-    s 2x "This is a good poem, [player]!"
-    s "Are you sure it's your first time?"
-    mc "Of course..."
-    mc "It's not that good."
-    mc "Am I the kind of guy who would be writing poems in his spare time?"
-    s 2q "Ehehe, I guess you're right~"
-    s 1q "But that's why it impressed me!"
-    s 1d "Well, to be honest..."
-    s "I was afraid that you wouldn't do it seriously..."
-    s "Or that you wouldn't write one at all."
-    jump ch1_s_shared
+    show satori 1a at t11 zorder 2
+    s 5q "...This is a good poem, [player]!" 
+    s 1x "Is this really your first time?"
+    mc "Of course it is." 
+    mc "You know I don't write poetry in my spare time."
+    s 1y "That's true." 
+    s 7d "But that just makes it even more impressive." 
+    s 1l "I mean...we both know why you decided to join."
+    s 7x "But it seems like you're really putting effort into writing..."
+    s 7d "And I appreciate that."
+    "It's true that I initially joined this club in the hopes of getting to know the others."
+    "But, I'd be lying if I said Satori had nothing to do with it."
+    "This club does mean a lot to him after all."
+    mc "Well, I may not be that into it yet, but I'm still gonna try."
+    mc "I don't wanna let any of you down."
+    s 1q "Aw. Even Mateo?"
+    mc "Mateo can go f..." #Go Fuck Himself
+    s 1ab "[player]..."
+    mc "{i}Sigh.{/i}"
+    mc "Yeah, Mateo, too."
+    s 4z "Haha! Good!"
+    s 1d "And don't worry."
+    s 1y "I'll keep my word to help you impress whoever you're interested in."
+    s 1d "It'll be my way of thanking you."
+    mc "I'm gonna hold you to that."
+    s 1z "Haha, deal!"
+    s 1x "Anyway-- wanna read my poem now?"
+    s 10l "I'm, umm... not very good at this."
+    mc "I'll be the judge of that."
+    return
 
 label ch1_s_good:
     show satori 1a at t11
@@ -1818,41 +1796,26 @@ label ch1_y_med:
     jump ch1_y_bad
 
 label ch1_y_good:
+    show yuuri 1a at t11 zorder 2
     y 1e "..."
-    "As Yuri reads the poem, I notice her eyes lighten."
-    y 2f "...Exceptional."
-    mc "Eh? What was that?"
-    y "...?"
-    y 2n "D-Did I say that out loud...?"
-    "Yuri first covers her mouth, but then ends up covering her whole face."
-    y 4c "I...!"
-    y "Uu..."
-    y "{i}(He's going to hate me...){/i}"
-    mc "Um..."
-    mc "You really didn't do anything wrong, Yuri..."
-    y 4a "Eh...?"
-    y "That's..."
-    y 2q "I-I guess you're right..."
-    y "What am I getting so nervous for?"
-    y "A-Ahaha..."
-    show yuri 2l at t11
-    "Yuri takes a breath."
-    y "So..."
-    y 1a "What kind of writing experience do you have?"
-    y "Your use of imagery and metaphors indicates you've written a lot of poetry before."
-    mc "Really...?"
-    mc "Wow, that's a huge compliment coming from you."
-    mc "This is actually my first time, really."
-    y 1e "Huh...?"
-    "Yuri stares at me blankly, then looks at my poem again."
-    y "..."
-    y 2h "...Well, I know that!"
-    y "I just meant...u-um..."
-    "Yuri trails off, unable to find an excuse."
-    "She traces her finger along the words in the poem, as if breaking it down more thoroughly."
-    y 2l "...Yeah."
-    y "Okay."
-    y "This is the reason I was able to tell."
+    "As he reads through my poem, I notice his eyes lighten." 
+    y "Exceptional..."
+    mc "Yeah?" 
+    mc "You really think so?"
+    y 7n "...!"
+    y 6o "I...didn't mean for that to come off as creepy or anything..."
+    mc "No, no! I'm super happy that you like it!"
+    y 6q "Well...in that case..."
+    y 3b "I'm very impressed, [player!]" 
+    y 1b "What kind of experience do you have?" 
+    y 1c "Your use of metaphors and imagery indicate you've done a lot of writing before."
+    mc "That's a really huge compliment coming from you." 
+    mc "This is actually my first time writing."
+    show yuuri 1e
+    "Yuuri looks at me quizzically before looking over my poem again."
+    y 6g "Interesting..."
+    "Yuuri traces the words of my poem with his finger, as if breaking it down more thoroughly."
+    y 6h "The thing is..." 
     jump ch1_y_shared
 
 
@@ -2493,28 +2456,56 @@ label m_sayori_1:
     return
 
 label m_yuri_1:
-    m 1a "Great job, [player]!"
-    m "I was going 'Ooh' in my head while reading it."
-    m 1j "It's really metaphorical!"
-    m 1a "I'm not sure why, but I didn't expect you to go for something so deep."
-    m 3b "I guess I underestimated you!"
-    mc "It's easiest for me to keep everyone's expectations low."
-    mc "That way, it always counts when I put in some effort."
-    m 5a "Ahaha! That's not very fair!"
-    m "Well, I guess it worked, anyway."
-    m 2a "You know that Yuri likes this kind of writing, right?"
-    m "Writing that's full of imagery and symbolism."
-    m 2d "Unlike Sayori, who likes using simple and direct words to describe happiness and sadness..."
-    m "Yuri likes it when readers are left to derive their own meaning out of it."
-    m 4d "It's very challenging to write like that effectively."
-    m "Both allowing people to get something out of it just by feel..."
-    m "Or letting them deeply analyze all of the nuances."
-    m "It can take years of practice, which I'm assuming Yuri has at this point."
-    m 1e "I never really asked, though..."
-    mc "I'm sure I'm nowhere near her level yet."
-    m 2b "Don't worry so much about that!"
-    m "You do your own thing."
-    m "Just keep exploring, and learn by trying new things!"
+    mc "...Do you like it?"
+    m 6k "[player]...your handwriting is atrocious."
+    mc "...!"
+    m 6u "It's hardly legible."
+    m 1x "Tell me...were you holding the pencil with your feet?"
+    mc "Okay, okay!"
+    mc "I get it!"
+    mc "I'll work on my handwriting! Jeez!"
+    mc "You don't have to be such a jerk about it."
+    show mateo 1k
+    "Mateo chuckles again, a bit louder this time."
+    "His smug attitude only pisses me off even more."
+    m 3v "Actually...it would be a great poem if your handwriting weren't so distractingly bad."
+    m 1j "I wasn't expecting you to go for something so deep."
+    m 4k "I'm impressed."
+    mc "Well...crappy handwriting aside, I guess my effort kinda blew away your low expectations of me, didn't it?"
+    m 6n "Alright, alright." 
+    m 6u "Don't get too proud of yourself." 
+    m 6w "It's a pretty good poem." 
+    m 4v "From the small assembly of letters I could actually decipher as words, it sounds like something Yuuri would like." 
+    m 4d "He loves writing that's full of imagery and symbolism." 
+    m 4r "This style leaves readers to derive their own meaning out of it." 
+    m 4q "It's actually very challenging to write like that effectively." 
+    m "It can take years of practice, which I'm assuming Yuuri has at this point." 
+    m 4a "But you..." 
+    m 1b "You seem to be a bit of a natural."
+    mc "Well, I mean..." 
+    mc "I'm sure I'm nowhere near his level yet."
+    m 1s "I agree." 
+    m 4t "Your use of imagery may be impressive, but you still obviously have a lot to learn." 
+    m 6k "You're not a lost cause just yet."
+    mc "I definitely plan on trying different things."
+    mc "It will take a while before I feel comfortable doing this."
+    mc "But rest assured, I am NOT a lost cause."
+    m 6a "Good to hear."
+    m 4b "I want to see you try new things."
+    m 4k "That is the best way to find the kind of style that suits you, after all."
+    m 4j "Don't force yourself to write the way everyone wants you to write."
+    m 1s "I mean..."
+    m 1t "It's not like you have to worry about impressing them..."
+    m 1ag "Right?"
+    mc "..."
+    mc "Right."
+    m 1j "Anyway, are you ready to read my poem now?" 
+    mc "Yeah. Looking forward to it."
+    m 6v "You sound thrilled."
+    mc "I mean... we both know you're going to make me look like an untalented hack."
+    mc "So I'm sorry I'm not leaping for joy at that opportunity."
+    m 4r "It's not my fault you choose to see it that way." 
+    mc "Whatever. Let's just see it already."
     return
 
 label m_natsuki_2:
