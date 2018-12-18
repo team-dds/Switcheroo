@@ -347,7 +347,7 @@ label ch1_end:
     show natsuko at f22
     n 6o "Well, you know what?"
     n "I'm not the one who started stuffing his pants with socks as soon as [player] started showing up!"
-    "OH... MY GOD."
+    "OH...MY GOD!"
     show natsuko at t22
     show yuuri at f21
     y 7p "N-Natsuko!"

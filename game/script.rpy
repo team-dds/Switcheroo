@@ -26,8 +26,13 @@ label start:
     if persistent.playthrough == 0:
 
         $ chapter = 0
-        call ch0_main from ch0_main #NEW if you kept in the call demo_end from demo_end the game just repeats itself.
-        #So i fixed it by having it call it from within the script folder and just run a full restart of rpy.
+        call ch0_main from ch0_main
+
+        call poem
+
+        call ch1_main
+
+        call finale
 
     return
 
