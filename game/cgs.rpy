@@ -130,22 +130,21 @@ image y_cg2_dust4:
 #Sitting by the window with Natsuki CG
 #Background
 image n_cg1_bg:
-    "images/cg/n_cg1_bg.png"
-#Natsuki's normal face
-image n_cg1_base:
-    "images/cg/n_cg1_base.png"
+    "mod_assets/images/cg/n_cg1_bg.png"
+#Natsuki's *cough*Natsuko*cough* normal face
+#image n_cg1_base:
+    #"mod_assets/images/cg/n_cg1_base.png"
+## Base does not exist in files
 
 #A few simple expressions
 image n_cg1_exp1:
-    "images/cg/n_cg1_exp1.png" #Happy
+    "mod_assets/images/cg/n_cg1a.png" #Normal
 image n_cg1_exp2:
-    "images/cg/n_cg1_exp2.png" #Angry
+    "images/cg/n_cg1b.png" #Too Much Talky
 image n_cg1_exp3:
-    "images/cg/n_cg1_exp3.png" #Also Angry
+    "images/cg/n_cg1c.png" #Huh?
 image n_cg1_exp4:
-    "images/cg/n_cg1_exp4.png" #Eyes closed
-image n_cg1_exp5:
-    "images/cg/n_cg1_exp5.png" #Eyes halflidded
+    "images/cg/n_cg1d.png" #Happy
 
 #Natsuki's glitched out creepy face
 image n_cg1b = LiveComposite((1280,720), (0,0), "images/cg/n_cg1b.png", (882,325), "n_rects1", (732,400), "n_rects2", (850,475), "n_rects3")
@@ -168,7 +167,7 @@ image n_rects3:
 #Natsuki in the closet CG
 #The closet background
 image n_cg2_bg:
-    "images/cg/n_cg2_bg.png"
+    "mod_assets/images/cg/n_cg2_bg.png"
 
 #Natsuki herself
 image n_cg2_base:
