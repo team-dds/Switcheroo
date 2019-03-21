@@ -139,6 +139,7 @@ label sayori_exclusive_1:
     s "Ugh...it's not worth it at all."
     "Satori hastily unbuttons his blazer once more, along with his shirt collar."
     "He also loosens his tie and frees it from beneath his sweater vest."
+    
     scene club_day
     with dissolve_cg
     show satori 5z
