@@ -32,9 +32,11 @@ label start:
 
         call ch1_main
 
-        call finale
+        #call finale
 
-    return
+        call endgame
+
+        return
 
 label endgame(pause_length=4.0):
     $ quick_menu = False
@@ -45,4 +47,3 @@ label endgame(pause_length=4.0):
     pause pause_length
     $ quick_menu = True
     return
-# Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc
