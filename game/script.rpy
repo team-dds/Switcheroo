@@ -26,10 +26,18 @@ label start:
     if persistent.playthrough == 0:
 
         $ chapter = 0
-        call ch0_main from ch0_main #NEW if you kept in the call demo_end from demo_end the game just repeats itself.
-        #So i fixed it by having it call it from within the script folder and just run a full restart of rpy.
+        call ch0_main from ch0_main
+        call poem
 
-    return
+        $ chapter = 1
+        call ch1_main
+        call poemresponse_start
+        call ch1_end
+
+        #call finale
+        call endgame
+
+        return
 
 label endgame(pause_length=4.0):
     $ quick_menu = False
@@ -40,4 +48,3 @@ label endgame(pause_length=4.0):
     pause pause_length
     $ quick_menu = True
     return
-# Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

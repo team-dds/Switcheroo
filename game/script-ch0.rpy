@@ -818,10 +818,9 @@ label ch0_main:
     "If I can remain motivated, I wonder if I'll be able to spend more time with one of these handsome fellows?"
     "I just have to stay positive and good fortune will find me."
     "And I guess that starts with writing a poem tonight...."
+    return
 
-    call demo_end from demo_end
-
-label demo_end:
+label finale:
     stop music fadeout 2.0
     scene residential_day
     show black zorder 2

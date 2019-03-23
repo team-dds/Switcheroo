@@ -347,7 +347,7 @@ label ch1_end:
     show natsuko at f22
     n 6o "Well, you know what?"
     n "I'm not the one who started stuffing his pants with socks as soon as [player] started showing up!"
-    "OH... MY GOD."
+    "OH...MY GOD!"
     show natsuko at t22
     show yuuri at f21
     y 7p "N-Natsuko!"
@@ -466,120 +466,277 @@ label ch1_end:
 label ch1_end_yuri:
     $ ch1_choice = "yuri"
     stop music fadeout 1.0
-    mc "Natsuki."
+    show natsuko at f21
+    show yuuri at t22
+    mc "Natsu..."
     mc "You're right that I liked your poem."
-    show natsuki zorder 3 at f22
-    n 1e "See??"
-    show natsuki 1g zorder 2 at t22
-    play music t8
-    mc "Wait!"
-    mc "That's not an excuse for you to be so mean!"
-    mc "You shouldn't pick a fight just because someone's opinion is different."
-    show natsuki zorder 3 at f22
-    n 1m "That's not what happened at all!"
-    n "Yuri wouldn't even take my poem seriously!"
-    show natsuki zorder 2 at t22
-    mc "Mm..."
-    mc "I understand."
-    mc "Yuri."
-    show yuri zorder 3 at f21
-    y 2t "Eh?"
-    show yuri zorder 2 at t21
+    show natsuko 7y
+    n "See??"
+    mc "Hold on!"
+    mc "That's no excuse for you to be so mean!"
+    mc "Why pick a fight with someone just because their opinion is different from yours?"
+    n 6e "That's his fault!"
+    n 5f "He wouldn't even take my poem seriously!"
+    "Ugh."
+    "Why do I have to be the one to handle this?"
+    "I look around for support, but Satori and Mateo are just standing there staring at me."
+    "Clearly, they're not going to be of any help."
+    mc "{i}Sigh.{/i} Alright..."
+    show natsuko at t21
+    "I turn to Yuuri."
+    mc "Yuuri."
     mc "You're a seriously talented writer."
-    mc "It's no secret that I was impressed."
-    show yuri zorder 3 at f21
-    y 2u "W-Well, that's..."
-    show yuri zorder 2 at t21
-    mc "But here's the thing."
+    show yuuri 1i
+    mc "It's no secret that I was impressed by your poem too."
+    mc "But here's the thing..."
     mc "No matter how simple or refined someone's writing style is..."
-    mc "They're still putting feelings into it, and it becomes something really personal."
-    mc "That's why Natsuki felt threatened when you said her poem was cute."
-    show yuri zorder 3 at f21
-    y 2v "I...see..."
-    y "I didn't notice that I..."
-    show yuri zorder 2 at t21
-    y 2w "I-I'm sorry..."
-    show yuri at s21
-    y "Uuu..."
-    show natsuki zorder 2 at t11
-    show yuri zorder 1 at thide
-    hide yuri
-    mc "But Natsuki, you took it way too far!"
-    mc "Yuri means well, and if you just told her how you felt..."
-    mc "Then this wouldn't have happened in the first place."
-    n 1e "Are you kidding?"
-    n "That's exactly what I did!"
-    n "It was {i}her{/i} that--"
-    show natsuki zorder 2 at t22
-    show monika 2i zorder 3 at f21
-    m "Natsuki, I think that's enough."
-    m "You both said some things that you didn't mean."
-    m "Yuri apologized. Don't you think you should, too?"
-    show monika zorder 2 at t21
-    show natsuki zorder 3 at f22
-    n 1x "Nnn...!"
-    show natsuki zorder 2 at t22
-    "Natsuki clenches her fists."
-    "In the end, nobody has taken her side."
-    "She's trapped, at this point being defiant only because she can't handle the pressure."
-    "I end up even feeling bad for her."
-    show monika zorder 2 at t32
-    show natsuki zorder 2 at t33
-    show sayori 2h at l41
-    s "U-Um!"
-    s "Sometimes when I'm hurt..."
-    s "It helps to take a walk and clear my head!"
-    show sayori zorder 2 at t41
-    mc "Sayori, she doesn't need to--"
-    show natsuki zorder 3 at f33
-    n 2q "You know what?"
-    n "I'm going to do that."
-    n 2w "It'll spare me from having to look at all your faces right now."
-    show natsuki zorder 1 at thide
-    hide natsuki
-    "Without warning, Natsuki snatches her own poem up from the desk and storms out."
-    "On her way out, she crumples up the poem with her hands and throws it in the trash."
-    show sayori zorder 3 at f41
-    s 1k "Natsuki..."
-    show sayori zorder 2 at t41
-    show monika zorder 3 at f32
-    m 1r "She really didn't need to do that..."
-    show sayori zorder 1 at thide
-    show monika zorder 1 at thide
-    hide sayori
-    hide monika
+    mc "They're still putting feelings into it and it becomes something really personal."
+    mc "That's why Natsu felt provoked when you said his poem was cute."
+    show natsuko at t21
+    show yuuri at f22
+    y 6v "I...I see."
+    y 6w "I didn't realize. I'm sorry."
+    mc "And Natsu..."
+    mc "Next time, keep the critique helpful and literature-related."
+    mc "No need for the personal insults."
+    show natsuko at f21
+    show yuuri at t22
+    n 6p "...!"
+    n "Are you kidding me!"
+    n 6r "He's the one who threw the first insult!"
+    "Natsuko does have a point there."
+    "I glance over at Yuuri."
+    show natsuko at t21
+    show yuuri at f22
+    y 7v "I did, didn't I?"
+    y 6t "I'm so sorry for that, Natsuko."
+    y 6w "Please forgive me."
+    mc "Well...I think we can agree you both said some things neither of you meant."
+    mc "Yuuri apologized."
+    mc "Don't you think you should too, Natsu?"
+    "Natsuko growls and clenches his fists."
+    show natsuko at f21
+    show yuuri at t22
+    n 7x "Alright, fine."
+    n 7w "I'm sorry, okay?"
+    show natsuko at thide
+    show yuuri at shide
+    hide yuuri
+    hide natsuko
+    "Natsuko drops back into his seat, crossing his arms in defiance."
     "I look across the room."
-    "Yuri has her chin buried in her hands while she stares down at her desk."
-    "I gingerly approach her and sit in an adjacent chair."
-    show yuri 4b zorder 2 at t11
-    y "Sigh..."
-    mc "Everything alright?"
-    y "I'm so embarrassed..."
+    "Yuuri walks over to his desk and sits down with his chin resting in his hand."
+    "I gingerly approach him and sit in the adjacent seat."
+    mc "You alright, big guy?"
+    show yuuri 6v at t11
+    y "{i}Sigh...{/i}"
+    y "I'm so embarrassed."
     y "I can't believe I acted like that."
-    y "You probably hate me now..."
-    mc "No--Yuri!"
-    mc "How could anyone not have gotten frustrated after being treated like that?"
+    y 6t "You must think I'm a pretentious cad."
+    mc "...Of course not. It could've been worse."
     mc "You handled it as well as anyone could."
-    mc "I don't think any less of you."
-    y 2v "Well..."
-    y "...Alright, I believe you."
-    y 2s "Thanks, [player]. You're too kind."
-    y "I'm thankful to have you a part of this club now."
-    mc "Er-- It's nothing."
-    y 2v "One more thing..."
-    y "Um, that one thing that Natsuki said..."
-    y 4c "About...you know..."
-    y "I would never do anything...so shameful..."
-    y "So..."
-    mc "...Eh?"
-    mc "What thing did Natsuki say?"
-    y 3n "--!"
-    y "U-Um!"
-    y 3q "Well, never mind that..."
-    y "I-I'm going to go make some tea..."
-    mc "Ah, good idea."
-    mc "Make enough for more than one person, okay?"
-    y "Y-Yeah."
+    y "I could have handled it better."
+    y 6w "I should have handled it better."
+    y "I...I know better."
+    mc "Don't beat yourself up."
+    mc "You apologized."
+    mc "That was big of you."
+    mc "It says a lot about your character."
+    mc "I'm impressed."
+    y 6t "Do... Do you mean that?"
+    mc "Of course I do."
+    mc "You believe me, right?"
+    y 1v "..."
+    y 1u "Yes. I believe you."
+    y 1s "Thank you, [player]."
+    y 1c "I'm really happy you joined the club."
+    mc "I'm happy to be here."
+    y 6h "Also...that one thing Natsuko said..."
+    y 6v "About..."
+    y 6t "You know..."
+    y 6v "It's..."
+    y 6n "It's completely untrue!"
+    "My eyes start to travel south, but I instantly force them back up to Yuuri's face."
+    mc "Ah!"
+    mc "Erm..."
+    "Don't respond with something stupid..."
+    "Don't respond with something stupid..."
+    mc "I know! I can tell."
+    "..."
+    "Why are words allowed to escape my face?!"
+    y 7n "---!"
+    y 7o "Well..."
+    y "Ahem..."
+    y 6q "I'm going to go make some tea."
+    show yuuri at shide
+    hide yuuri
+    "Yuuri quickly stands up and scurries away."
+    "I sigh and bury my face in my hands."
+    show satori 1c at t11
+    s "Man."
+    s "That really was something, wasn't it?"
+    "I slowly pick up my head and shoot an enraged glare at Satori's clueless face."
+    mc "You SUCK!"
+    "Satori jumps back in surprise."
+    show satori 1n
+    s 1m "Wh-wh-what'd I do?!"
+    mc "Not a damn thing!"
+    mc "That's the problem!"
+    mc "You saw what was going on and just stood there like a lump!"
+    mc "What kinda Vice President are you?"
+    show satori 1e at t22
+    show mateo 6d at t21
+    "I look up at Mateo, who's standing a few feet away."
+    mc "And you!"
+    mc "Captain Useless!"
+    mc "Where the hell were you, huh?"
+    show satori at t22
+    show mateo at f21
+    m 6i "I beg your pardon?"
+    mc "You heard me."
+    mc "There was just a huge conflict in the club and neither you nor Satori put any effort into stopping it."
+    mc "You guys are supposed to be the leaders."
+    mc "That means putting your foot down when the situation calls for it."
+    mc "You don't leave that responsibility to the newest member!"
+    show satori 1k
+    "Satori looks away, clearly embarrassed."
+    "Mateo glares at me for a moment."
+    show mateo 6p
+    "Then to my surprise, he averts his gaze and drops the scowl."
+    m "I... I suppose you might have a point."
+    m 6o "Perhaps I should have interjected..."
+    show satori at f22
+    show mateo at t21
+    s 1e "I-I'm sorry..."
+    s 1k "I should have been paying attention."
+    mc "Tell you what..."
+    mc "If I have to learn to be a poet, then you two need to learn to be better leaders."
+    mc "Deal?"
+    s 1d "You got a deal, [player]!"
+    show satori at thide
+    hide satori
+    show mateo at t11
+    "I look at Mateo skeptically."
+    mc "What about you?"
+    m 1s "Rest assured, I {i}will{/i} be taking control from now on."
+    m 6x "I suppose I owe you my gratitude for your surprisingly enlightening advice."
+    show mateo 1j
+    "Mateo smiles at me."
+    "My stomach knots up."
+    "Ugh... why does he have to be so dashing?"
+    mc "It... it's fine..."
+    return
+
+label ch1_end_natsuki:
+    $ ch1_choice = "natsuki"
+    mc "Um...Yuuri..."
+    show yuuri 1v
+    mc "You're insanely talented."
+    mc "But Natsu does have a point."
+    mc "I think conveying feelings with a few words can be just as impressive."
+    mc "It lets the reader's imagination take over."
+    mc "And Natsu's poem did a really good job at that."
+    show natsuko 7y
+    "Natsuko beams proudly."
+    mc "And Natsu..."
+    show natsuko 7k
+    mc "What all of us talked about yesterday..."
+    mc "It's true."
+    mc "Writing is a really personal thing and sharing it can be hard."
+    mc "We all learned that today."
+    mc "Even a small amount of criticism can lead to a pretty heated debate."
+    "I see Satori nodding approvingly from the corner of my vision."
+    mc "Yeah, so..."
+    mc "You don't need to feel threatened, Natsu."
+    mc "You're a great writer."
+    show natsuko 7ad
+    "Natsuko blushes and smiles gently to himself."
+    show yuuri 6t
+    "Yuuri looks at me dejectedly."
+    "With a face like that, I can't help but feel bad for him as well."
+    mc "Yuuri... I'm sure Natsuko didn't mean the things he said."
+    mc "You're an amazing writer too."
+    mc "So you don't need to feel threatened either."
+    show yuuri at f21
+    y 6v "If...if you say so..."
+    show yuuri at t21
+    show natsuko at f22
+    n 7q "[player], don't apologize for me."
+    n "I'm man enough to do that myself."
+    "Natsuko looks at Yuuri."
+    n 5s "That thing I said..."
+    n "About...you know...stuffing your pants..."
+    n 5h "Well...I'm sorry."
+    n 7r "I mean...I don't know exactly if it's true or not..."
+    n 7w "But I'm sorry I said it."
+    hide natsuko
+    show yuuri 6g
+    "That said, Natsuko crosses his arms and looks away stubbornly."
+    "I sigh."
+    "Well, that apology could have been more sincere."
+    show satori 1q at f22
+    "Satori playfully nudges Yuuri."
+    s 7x "Hey, I have P.E. with Yuuri."
+    s 7z "Trust me, every inch he's packing is 100% natural!"
+    show satori at t22
+    show yuuri 6o
+    "My gaze instantly shifts back to Yuuri's crotch."
+    show yuuri 7p
+    "This time, he notices."
+    "Both of our faces turn bright red."
+    show yuuri at f21
+    y 6q "I'll...I'll go make some tea."
+    hide yuuri left swipe
+    "Yuuri hurries off."
+    "Satori smiles proudly at me."
+    show satori at f22
+    s 1q "I helped."
+    show satori at t22
+    "My glare meets his dumb grin."
+    mc "THAT'S where you decide to jump in?"
+    show satori 1e
+    mc "I needed your help, like, 5 minutes ago!"
+    mc "You just stood there smiling like an idiot while I broke up the fight!"
+    mc "What the hell kinda Vice President are you?!"
+    "Realizing his mistake, Satori blushes and looks away embarassingly."
+    show satori at f22
+    s 1k"I...I'm sorry...I didn't think..."
+    show satori at t22
+    mc "And {i}you{/i}!"
+    show mateo 1d at t21
+    "I turn towards Mateo, who's standing off to the side, watching."
+    mc "Where were you during that little fiasco?"
+    mc "Watching from the sidelines while I did {i}your{/i} job?"
+    "Mateo glares at me for a moment."
+    show mateo 6p at t21
+    "Then to my surprise, he averts his gaze and drops the scowl."
+    show mateo at f21
+    m "I... I suppose you might have a point."
+    m 6o "Perhaps I should have interjected..."
+    show mateo at t21
+    show satori at f22
+    s 1f "Yeah..."
+    s "Me too."
+    show satori at t22
+    "Both of them look dejectedly at the ground."
+    "I sigh."
+    mc "Tell you what..."
+    mc "If I have to learn to be a poet, then you two need to learn to be better leaders."
+    mc "Deal?"
+    show satori at f22
+    s 1d "You got a deal, [player]!"
+    hide satori
+    "I look at Mateo skeptically."
+    mc "What about you?"
+    mc "Gonna step up your game and be a real leader?"
+    show mateo at t11
+    m 1s "Rest assured, I {i}will{/i} be taking control from now on."
+    m 6x "I suppose I owe you my gratitude for your surprisingly enlightening advice."
+    show mateo 1j
+    "Mateo smiles at me."
+    "My stomach knots up."
+    "Ugh... why does he have to be so dashing?"
+    mc "It... it's fine..."
     return
 
 label ch1_end_sayori:
