@@ -1,11 +1,13 @@
-#This is a copy of definitions.rpy from DDLC.
-#Use this as a starting point if you would like to override with your own.
-#Explanation for Definitions
-#This section defines stuff for the game: sprite poses for the girls, music, and backgrounds
-#If you plan on adding new content, pop them over down there and mimic the appropriate lines!
+# Definitions.rpy
+
+# This section defines stuff for DDLC and your mod!
+
+# Use this as a starting point if you would like to override with your own.
+
 define persistent.demo = False
-define persistent.steam = False
-define config.developer = False #Change this flag to True to enable dev tools
+define persistent.steam = ("steamapps" in config.basedir.lower())
+# Change this to True to enable Developer Mode
+define config.developer = False
 
 python early:
     import singleton
@@ -18,34 +20,69 @@ init python:
     config.keymap['clipboard_voicing'] = []
     config.keymap['toggle_skip'] = []
     renpy.music.register_channel("music_poem", mixer="music", tight=True)
+    
+    # Get's position of Music
     def get_pos(channel='music'):
         pos = renpy.music.get_pos(channel=channel)
         if pos: return pos
         return 0
+
+    # Delete's All Saves
     def delete_all_saves():
         for savegame in renpy.list_saved_games(fast=True):
             renpy.unlink_save(savegame)
+
+    # Delete's Characters
     def delete_character(name):
-        if persistent.do_not_delete: return
         import os
         try: os.remove(config.basedir + "/characters/" + name + ".chr")
         except: pass
+
+    # Restores Character's CHR
+    def restore_all_characters():
+        try: renpy.file("../characters/monika.chr")
+        except: open(config.basedir + "/characters/monika.chr", "wb").write(renpy.file("monika.chr").read())
+        try: renpy.file("../characters/natsuki.chr")
+        except: open(config.basedir + "/characters/natsuki.chr", "wb").write(renpy.file("natsuki.chr").read())
+        try: renpy.file("../characters/yuri.chr")
+        except: open(config.basedir + "/characters/yuri.chr", "wb").write(renpy.file("yuri.chr").read())
+        try: renpy.file("../characters/sayori.chr")
+        except: open(config.basedir + "/characters/sayori.chr", "wb").write(renpy.file("sayori.chr").read())
+    
+    # Restores Characters if their playthough matches current run.
+    def restore_relevant_characters():
+        restore_all_characters()
+        if persistent.playthrough == 1 or persistent.playthrough == 2:
+            delete_character("sayori")
+        elif persistent.playthrough == 3:
+            delete_character("sayori")
+            delete_character("natsuki")
+            delete_character("yuri")
+        elif persistent.playthrough == 4:
+            delete_character("monika")
+
+    # Controls time.
     def pause(time=None):
+        #global _windows_hidden
         if not time:
+            #_windows_hidden = True
             renpy.ui.saybehavior(afm=" ")
             renpy.ui.interact(mouse='pause', type='pause', roll_forward=None)
+            #_windows_hidden = False
             return
         if time <= 0: return
+        #_windows_hidden = True
         renpy.pause(time)
+        #_windows_hidden = False
 
-#Music
-#The Music section is where you can reference existing DDLC audio
+# Music
 
-#You'll see this in some existing scripts as command 'play music [t1]' for example
-#For easier reference, there are comments next to it so you can go DJ on the mod :)
+# This section is where you can reference DDLC audio and add your own!
+# audio. - tells Ren'Py this is sound
+# t1 - tells Ren'Py the label of the music/sound file
+# <loop 22.073> - tells Ren'Py to loop the song at that time interval
+# "bgm/1.ogg" - location of your music
 define audio.t1 = "<loop 22.073>bgm/1.ogg"  #Main theme (title)
-
-
 define audio.t2 = "<loop 4.499>bgm/2.ogg"   #satori theme
 define audio.t2g = "bgm/2g.ogg"
 define audio.t2g2 = "<from 4.499 loop 4.499>bgm/2.ogg"
@@ -57,20 +94,13 @@ define audio.t3g3 = "<loop 4.618>bgm/3g2.ogg"
 define audio.t3m = "<loop 4.618>bgm/3.ogg"
 define audio.t4 = "<loop 19.451>bgm/4.ogg"  #Poem minigame
 define audio.t4g = "<loop 1.000>bgm/4g.ogg"
-
 define audio.t5 = "<loop 4.444>bgm/5.ogg"   #Sharing poems...... 'Okay Everyone~!'
-#Hey Mod team, our themes aren't defined here in the original script.
-#Did some reading around and there was this + "_character" reference elsewhere.
-#Anyhow, I'll try 'defining' them and see if it works!
 
-define audio.tmonika = "<loop 4.444>bgm/5_monika.ogg" #I'm the only one with pianos x3
-define audio.tsatori = "<loop 4.444>bgm/5_satori.ogg" #Hxppy Thoughts with Ukelele & Snapping~!
-define audio.tnatsuko = "<loop 4.444>bgm/5_natsuko.ogg" #Was it always cute on purpose?
-define audio.tyuuri = "<loop 4.444>bgm/5_yuuri.ogg" #Fancy harps and instruments!
-
-#Yeah, Monika... that should be good.
-#So, take it from her and if you want to define music, make sure it exists in the appropriate folder
-#Define its "audio.name" and see how it goes! (this should always be .ogg too, I think)
+# Doki Poem Theme
+define audio.tmonika = "<loop 4.444>bgm/5_monika.ogg" # Okay Everyone! (Monika)
+define audio.tsayori = "<loop 4.444>bgm/5_sayori.ogg" # Okay Everyone! (Sayori)
+define audio.tnatsuki = "<loop 4.444>bgm/5_natsuki.ogg" # Okay Everyone! (Natsuki)
+define audio.tyuri = "<loop 4.444>bgm/5_yuri.ogg" # Okay Everyone! (Yuri)
 
 define audio.t5b = "<loop 4.444>bgm/5.ogg"
 define audio.t5c = "<loop 4.444>bgm/5.ogg"
@@ -88,9 +118,8 @@ define audio.t10 = "<loop 5.861>bgm/10.ogg"   #Confession
 define audio.t10y = "<loop 0>bgm/10-yuuri.ogg"
 define audio.td = "<loop 36.782>bgm/d.ogg"
 
-
-define audio.m1 = "<loop 0>bgm/m1.ogg" #Monika and her spaceroom music
-define audio.mend = "<loop 6.424>bgm/monika-end.ogg" #Monika music post-deletion
+define audio.m1 = "<loop 0>bgm/m1.ogg" # Just Monika. - Just Monika.
+define audio.mend = "<loop 6.424>bgm/monika-end.ogg" # I Still Love You - Monika Post-Delete Theme
 
 define audio.ghostmenu = "<loop 0>bgm/ghostmenu.ogg"
 define audio.g1 = "<loop 0>bgm/g1.ogg"
@@ -107,10 +136,6 @@ define audio.fall3 = "mod_assets/audio/fall3.wav"
 define audio.ohayou_satori = "mod_assets/audio/ohayou_satori.mp3"
 define audio.MainMenu="<loop 22.073>mod_assets/audio/main_theme.mp3" #NEW as of 11:50AM 9/21/2018
 
-
-
-
-
 # Backgrounds
 image black = "#000000"
 image dark = "#000000e4"
@@ -120,11 +145,11 @@ image splash = "bg/splash.png"
 image end:
     truecenter
     "gui/end.png"
-image bg residential_day = "bg/residential.png"
-image bg class_day = "bg/class.png"
-image bg corridor = "bg/corridor.png"
-image bg club_day = "bg/club.png"
-image bg club_day2:
+image bg residential_day = "bg/residential.png" # Start of DDLC BG
+image bg class_day = "bg/class.png" # The classroom BG
+image bg corridor = "bg/corridor.png" # The hallway BG
+image bg club_day = "bg/club.png" # The club BG
+image bg club_day2: # Glitched Club BG
     choice:
         "bg club_day"
     choice:
@@ -137,16 +162,17 @@ image bg club_day2:
         "bg club_day"
     choice:
         "bg/club-skill.png"
-image bg closet = "bg/closet.png"
-image bg bedroom = "bg/bedroom.png"
-image bg satori_bedroom = "bg/satori_bedroom.png"
-image bg house = "bg/house.png"
-image bg kitchen = "bg/kitchen.png"
+image bg closet = "bg/closet.png" # The closet BG
+image bg bedroom = "bg/bedroom.png" # MC's Room BG
+image bg sayori_bedroom = "bg/sayori_bedroom.png" # Sayori's Room BG
+image bg house = "bg/house.png" # Sayori's House BG
+image bg kitchen = "bg/kitchen.png" # MC's Kitchen BG
 
-image bg notebook = "bg/notebook.png"
-image bg notebook-glitch = "bg/notebook-glitch.png"
+image bg notebook = "bg/notebook.png" # Poem Game Notebook Scene
+image bg notebook-glitch = "bg/notebook-glitch.png" # Glitched Poem Game BG
 
 image bg glitch = LiveTile("bg/glitch.jpg")
+
 image bg club_desks = "mod_assets/images/bg/club_desks.png"
 image bg Fmbedroom = "mod_assets/images/bg/femc_bedroom.png"
 
@@ -191,8 +217,8 @@ image glitch_color:
         0.2
         alpha 0.7
         linear 0.45 alpha 0
-        #1.0
-        #linear 1.0 alpha 0.0
+
+
 
 image glitch_color2:
     ytile 3
@@ -229,13 +255,13 @@ image glitch_color2:
     parallel:
         alpha 0.7
         linear 0.45 alpha 0
-        #1.0
-        #linear 1.0 alpha 0.0
 
-#------------------------------------------------From hereon, the girl's bodies are defined along with their heads.
-#------------------------------------------------From hereon, the girl's bodies are defined along with their heads.
-#-----------------------------------------here's reference for the left half------the right half--------the head
-# satori
+# Character Definitions
+
+# This is where the characters bodies and faces are defined.
+# They are defined by left half, right half and their head.
+
+# Sayori's Definitions
 image satori 1 = im.Composite((960, 960), (0, 0), "mod_assets/images/satori/1l.png", (0, 0), "mod_assets/images/satori/1r.png", (0, 0), "mod_assets/images/satori/a.png")
 image satori 1a = im.Composite((960, 960), (0, 0), "mod_assets/images/satori/1l.png", (0, 0), "mod_assets/images/satori/1r.png", (0, 0), "mod_assets/images/satori/a.png")
 image satori 1b = im.Composite((960, 960), (0, 0), "mod_assets/images/satori/1l.png", (0, 0), "mod_assets/images/satori/1r.png", (0, 0), "mod_assets/images/satori/b.png")
@@ -1472,18 +1498,17 @@ define s = DynamicCharacter('s_name', image='satori', what_prefix='"', what_suff
 define m = DynamicCharacter('m_name', image='mateo', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
 define n = DynamicCharacter('n_name', image='natsuko', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
 define y = DynamicCharacter('y_name', image='yuuri', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
-define ny = Character('Nat & yuuri', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
+define ny = Character('Nat & Yuuri', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
 
 define _dismiss_pause = config.developer
 
-###### Persistent Variables ######
-# These values are automatically loaded/saved on game start and exit.
-# These exist across all saves
+# Persistent Variables
 
+# These variables are load at game startup and exist on all saves.
 default persistent.playername = ""
 default player = persistent.playername
 default persistent.playthrough = 0
-default persistent.yuuri_kill = 0
+default persistent.yuri_kill = 0
 default persistent.seen_eyes = None
 default persistent.seen_sticker = None
 default persistent.ghost_menu = None
@@ -1495,12 +1520,13 @@ default persistent.special_poems = None
 default persistent.clearall = None
 default persistent.menu_bg_m = None
 default persistent.first_load = None
+default persistent.first_poem = None
+default persistent.seen_colors_poem = None
+default persistent.monika_back = None
 
-###### Other global variables ######
-# It's good practice to define global variables here, just so you know what you can call later
-
-default in_satori_kill = None
-default in_yuuri_kill = None
+# Other Persistent Variables
+default in_sayori_kill = None
+default in_yuri_kill = None
 default anticheat = 0
 define config.mouse = None
 default allow_skipping = True
@@ -1509,57 +1535,66 @@ default chapter = 0
 default currentpos = 0
 default faint_effect = None
 
-default s_name = "Satori"
-default m_name = "Mateo"
-default n_name = "Natsuko"
-default y_name = "Yuuri"
+default s_name = "Sayori"
+default m_name = "Monika"
+default n_name = "Natsuki"
+default y_name = "Yuri"
 
-# Instantiating variables for poem appeal. This is how much each character likes the poem for each day.
-# -1 = Dislike, 0 = Neutral, 1 = Like
+# Poem Variables
+# This is how much each character likes your poem day by day
+# -1 - Bad, 0 - Neutral, 1 - Good
 default n_poemappeal = [0, 0, 0]
 default s_poemappeal = [0, 0, 0]
 default y_poemappeal = [0, 0, 0]
 default m_poemappeal = [0, 0, 0]
 
-# The last winner of the poem minigame.
-default poemwinner = ['satori', 'satori', 'satori']
+# The last winner of the poem game
+default poemwinner = ['sayori', 'sayori', 'sayori']
 
-# Keeping track of who read your poem when you're showing it to each of the girls.
+# This keeps track on who already read your poem
 default s_readpoem = False
 default n_readpoem = False
 default y_readpoem = False
 default m_readpoem = False
 
-# Used in poemresponse_start because it's easier than checking true/false on everyone's read state.
+# This stores how many poems you read so far.
 default poemsread = 0
 
-# The main appeal points. Whoever likes your poem the most gets an appeal point for that chapter.
-# Appeal points are used to keep track of which exclusive scene to show each chapter.
+# This stores who likes your poem the most.
+# This controls which exclusive scene you will get each chapter.
 default n_appeal = 0
 default s_appeal = 0
 default y_appeal = 0
 default m_appeal = 0
 
-# We keep track of whether we watched natsuko's and satori's second exclusive scenes
-# to decide whether to play them in chapter 3.
+# Tracks whether we watched Natsuki's and Yuri's exclusive scenes
 default n_exclusivewatched = False
 default y_exclusivewatched = False
 
-# yuuri runs away after the first exclusive scene of playthrough 2.
+# Tracks whether Yuri runs away after the first exclusive scene of Act 2
 default y_gave = False
 default y_ranaway = False
 
-# We choose who to side with in chapter 1.
-default ch1_choice = "satori"
+# Tracks if we get to Natsuki's and Yuri's third poem
+default n_read3 = False
+default y_read3 = False
 
-# If we choose to help satori in ch3, some of the dialogue changes.
-default help_satori = None
+# Tracks who we chose to side with in Chapter 1
+default ch1_choice = "sayori"
+
+default n_poemearly = False
+
+# Tracks whether we wanted to help Sayori and/or Monika
+default help_sayori = None
 default help_monika = None
 
-# We choose who to spend time with in chapter 4.
-default ch4_scene = "yuuri"
-default ch4_name = "yuuri"
-default satori_confess = True
+# Tracks who we chose to spend time with in Chapter 4
+default ch4_scene = "yuri"
+default ch4_name = "Yuri"
 
-# We read natsuko's confession poem in chapter 23.
-default natsuko_23 = None
+# Tracks if we accepted Sayori's Confession
+default sayori_confess = True
+
+# We read Natsuki's third poem in Chapter 23
+default natsuki_23 = None
+

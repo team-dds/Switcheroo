@@ -516,7 +516,7 @@ label ch1_s_end:
     s 5m "No!..."
     s 5k "..."
     s 4l "Maybe... a little bit..."
-    mc "You can't answer "a little bit" to a yes or no question."
+    mc "You can't answer \"a little bit\" to a yes or no question."
     s 1k "Ah--- I forgot to do it last night."
     s 7l "But, hey, I tried my best..."
     mc "Well, truthfully, it is pretty good for something that was thrown together in 5 minutes."
@@ -2314,7 +2314,7 @@ label ch1_m_start:
     mc "You sound pretty confident for someone who claims to not be very good."
     m 1j "Well...that's 'cause I have to sound confident."
     m 1b "That doesn't mean I always feel that way, you know?"
-    show monika 1a
+    show mateo 1a
     mc "I see..."
     mc "Well, let's read it, then."
     return
@@ -2378,7 +2378,7 @@ label m_natsuki_1:
     mc "I get it!"
     mc "I'll work on my handwriting! Jeez!"
     mc "You don't have to be such a jerk about it."
-    show mateo at 1k
+    show mateo 1k
     "Mateo chuckles again, a bit louder this time."
     "His smug attitude only pisses me off even more."
     m 3v "From the small assembly of letters I could actually decipher as words, it sounds like the childish dribble Natsuko writes."

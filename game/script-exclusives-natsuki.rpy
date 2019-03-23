@@ -217,7 +217,8 @@ label natsuki_exclusive_1:
     n "Just keep reading!" 
     n "You'll see."
 
-    show bg club_day with dissolve_cg
+    scene bg club_day 
+    with dissolve_cg
 
     "Natsuko's voice sparkles with excitement, but he explains everything in a surprisingly slow and detailed manner." 
     "It's a stark contrast from his usual fast-talking, flippant behavior." 

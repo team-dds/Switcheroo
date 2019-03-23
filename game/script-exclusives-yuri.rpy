@@ -26,7 +26,7 @@ label yuri_exclusive_1:
     y "Once it starts to pick up, it's impossible to put down."
     y "It's a very engaging story."
     mc "Oh yeah?"
-    mc "Is it a horror book?
+    mc "Is it a horror book?"
     y "It is."
     mc "Cool. What's it about?"
     y 1h "Well..."
@@ -109,7 +109,7 @@ label yuri_exclusive_1:
     mc "Well, I'm not exactly used to it either."
     mc "So let me know if I end up distracting you, okay?"
     y 1b "I'm sure you won't be a problem."
-    show yuuri at shide
+    show yuuri at thide
     hide yuuri
     "I open the book and start the prologue."
     "I soon understand what Yuuri means by reading in company."

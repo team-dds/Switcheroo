@@ -819,16 +819,3 @@ label ch0_main:
     "I just have to stay positive and good fortune will find me."
     "And I guess that starts with writing a poem tonight...."
     return
-
-label finale:
-    stop music fadeout 2.0
-    scene residential_day
-    show black zorder 2
-    with wipeleft_scene
-    show femc femc1 at l11 zorder 3
-    mc "Hey, [player]! This is the end of the Doki Doki Switcheroo demo!"
-    mc "I know. I wish it was longer, too!"
-    mc "But if you're as excited as I am to write a poem for one of these hot guys..."
-    mc "Then stay tuned for the next demo, or even the full mod release, coming soon!"
-    mc "Thanks for playing!"
-    $ renpy.full_restart()

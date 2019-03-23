@@ -1,13 +1,9 @@
-﻿
+
 ## Initialization
-################################################################################
 
 init offset = -1
 
-
-################################################################################
 ## Styles
-################################################################################
 
 style default:
     font gui.default_font
@@ -88,10 +84,10 @@ style prompt_text is gui_text:
     size gui.interface_text_size
 
 
-#style bar:
-#    ysize gui.bar_size
-#    left_bar Frame("gui/bar/left.png", gui.bar_borders, tile=gui.bar_tile)
-#    right_bar Frame("gui/bar/right.png", gui.bar_borders, tile=gui.bar_tile)
+# style bar:
+#     ysize gui.bar_size
+#     left_bar Frame("gui/bar/left.png", gui.bar_borders, tile=gui.bar_tile)
+#     right_bar Frame("gui/bar/right.png", gui.bar_borders, tile=gui.bar_tile)
 
 style vbar:
     xsize gui.bar_size
@@ -110,7 +106,6 @@ style scrollbar:
     unscrollable "hide"
     bar_invert True
 
-
 style vscrollbar:
     xsize 18
     base_bar Frame("gui/scrollbar/vertical_poem_bar.png", tile=False)
@@ -118,10 +113,10 @@ style vscrollbar:
     unscrollable "hide"
     bar_invert True
 
-#style vscrollbar:
-#    xsize gui.scrollbar_size
-#    base_bar Frame("gui/scrollbar/vertical_[prefix_]bar.png", gui.vscrollbar_borders, tile=gui.scrollbar_tile)
-#    thumb Frame("gui/scrollbar/vertical_[prefix_]thumb.png", gui.vscrollbar_borders, tile=gui.scrollbar_tile)
+# style vscrollbar:
+#     xsize gui.scrollbar_size
+#     base_bar Frame("gui/scrollbar/vertical_[prefix_]bar.png", gui.vscrollbar_borders, tile=gui.scrollbar_tile)
+#     thumb Frame("gui/scrollbar/vertical_[prefix_]thumb.png", gui.vscrollbar_borders, tile=gui.scrollbar_tile)
 
 style slider:
     ysize 18
@@ -138,24 +133,19 @@ style frame:
     padding gui.frame_borders.padding
     background Frame("mod_assets/gui/frame.png", gui.frame_borders, tile=gui.frame_tile)
 
+## In-Game Screens
 
+# Say Screen
 
-################################################################################
-## In-game screens
-################################################################################
+# This screen is used to show dialogue to the player.
+# It takes two variables 'who' and 'what', where 'who' is the
+# character speaking and 'what' the text they are saying.
+# (Who can be set to None if no name is given)
 
+# This screen must create a text displayable with id "what", as Ren'Py uses
+# this to manage text display. It can also create displayables with id "who"
+# and id "window" to apply style properties.
 
-## Say screen ##################################################################
-##
-## The say screen is used to display dialogue to the player. It takes two
-## parameters, who and what, which are the name of the speaking character and
-## the text to be displayed, respectively. (The who parameter can be None if no
-## name is given.)
-##
-## This screen must create a text displayable with id "what", as Ren'Py uses
-## this to manage text display. It can also create displayables with id "who"
-## and id "window" to apply style properties.
-##
 ## https://www.renpy.org/doc/html/screen_special.html#say
 
 screen say(who, what):
@@ -178,7 +168,6 @@ screen say(who, what):
         add SideImage() xalign 0.0 yalign 1.0
 
     use quick_menu
-
 
 style window is default
 style say_label is default
@@ -259,9 +248,12 @@ screen input(prompt):
     window:
 
         vbox:
-            xpos gui.text_xpos
-            xanchor 0.5
-            ypos gui.text_ypos
+#            xpos gui.text_xpos
+#            xanchor 0.5
+#            ypos gui.text_ypos
+            xalign 0.5
+            yalign 0.5
+            spacing 30
 
             text prompt style "input_prompt"
             input id "input"
@@ -720,8 +712,7 @@ style game_menu_label_text:
     font "gui/font/RifficFree-Bold.ttf"
     size gui.title_text_size
     color "#fff"
-    outlines [(6, "#154660", 0, 0), (3, "#154660", 2, 2)] #NEW NOTEs as of 3:33AM 9/21/2018 This will change the setting text at the top from pink to whatever color you want.
-    #(continueation of above note) if you want to blend colors keep the first and second numbers different and the top and bottom will be blended colors.
+    outlines [(6, "#154660", 0, 0), (3, "#154660", 2, 2)]
     yalign 0.5
 
 style return_button:
@@ -1056,7 +1047,7 @@ style pref_label_text:
     font "gui/font/RifficFree-Bold.ttf"
     size 24
     color "#fff"
-    outlines [(3, "#154660", 0, 0), (1, "#154660", 1, 1)]
+    outlines [(3, "#b59", 0, 0), (1, "#b59", 1, 1)]
     yalign 1.0
 
 style pref_vbox:
@@ -1470,13 +1461,13 @@ style confirm_button is gui_medium_button
 style confirm_button_text is gui_medium_button_text
 
 style confirm_frame:
-    background Frame([ "gui/confirm_frame.png", "mod_assets/gui/frame.png"], gui.confirm_frame_borders, tile=gui.frame_tile)
+    background Frame([ "gui/confirm_frame.png", "gui/frame.png"], gui.confirm_frame_borders, tile=gui.frame_tile)
     padding gui.confirm_frame_borders.padding
     xalign .5
     yalign .5
 
 style confirm_prompt_text:
-    color "#154660"
+    color "#000"
     outlines []
     text_align 0.5
     layout "subtitle"
