@@ -33,18 +33,18 @@ label sayori_exclusive_1:
     s 4r "Yeah! That works out perfectly!"
     m 3b "Now to work out the details of the event itself..."
     "I find myself smiling...thinking about those donuts."
-    scene black with eyes_close
+    scene black with close_eyes
     "Also, I admire Satori's dedication to this club."
     "I have so much trouble finding any motivation at all."
     "Satori, on the other hand, can put his mind to anything and make it happen."
     "That's why I let him get on my case about things."
     "I wonder what it'd be like to see the world through his eyes?..."
-    scene club_day with eyes_open
+    scene bg club_day with open_eyes
     mc "Gah---!"
     show satori 4aa at face
     "I open my eyes to see Satori's face filling my vision."
     "I nearly fall out of my chair."
-    satori at h011
+    show satori at h11
     s 1aa "Aw...did I wake baby from her wittle nap?"
     mc "You scared me half to death, ya big doofus!"
     s 1j "Well, tough!"
@@ -140,9 +140,9 @@ label sayori_exclusive_1:
     "Satori hastily unbuttons his blazer once more, along with his shirt collar."
     "He also loosens his tie and frees it from beneath his sweater vest."
     
-    scene club_day
+    scene bg club_day
     with dissolve_cg
-    show satori 5z
+    show satori 5z at t11 
     s "Ah...much better!"
     "Having disheveled himself once again, Satori stretches in relief."
     s 1j "You have some nerve to talk about {i}my{/i} wardrobe."
@@ -193,6 +193,7 @@ label sayori_exclusive_1:
     s 5z "Sweet! I can't wait to read yours, [player]!"
     mc "Yeah...likewise..."
     "I fail to sound enthusiastic as Satori jogs to his desk to retrieve his poem."
+    show satori behind mateo at thide
     return
 
 label sayori_exclusive_2:

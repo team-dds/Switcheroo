@@ -1,8 +1,7 @@
-
-
 label ch1_main:
     scene bg club_day
     with dissolve_scene_half
+    play music MainMenu
     show mateo 1b zorder 2 at t11
     m "...? Ah. You came back..."
     mc "Yep."
@@ -116,7 +115,7 @@ label ch1_main:
     s 1o "..."
     s 1l "What?"
     "My mouth is overflowing with donut."
-    show satori at 1y
+    show satori 1y
     "Satori visibly tries to suppress the grin creeping across his face."
     "We both break at the same time and start giggling."
     show satori 1s
@@ -215,7 +214,7 @@ label ch1_main:
     $ nextscene = poemwinner[0] + "_exclusive_" + str(eval(poemwinner[0][0] + "_appeal"))
     call expression nextscene
 
-    show mateo 61 at t11
+    show mateo 1 zorder 2 at t21
     m "By the way, [player], did you remember to write a poem last night?"
     mc "Y-Yeah."
     "My relaxation ends."
@@ -246,6 +245,7 @@ label ch1_main:
 label ch1_end:
     scene bg club_day
     with wipeleft_scene
+    play music MainMenu
     "Phew."
     "I guess that's everyone."
     "I glance around the room."
@@ -311,12 +311,14 @@ label ch1_end:
     y 1h "Which I haven't yet."
     y 1l "And [player] liked my poem too, by the way."
     y "She even said she was impressed by it."
+    stop music fadeout 1.0
     "Natsuko smirks and leans back in his chair, propping his feet up on the desk."
     show yuuri at t21
     show natsuko at f22
     n 1y "Oh? I didn't realize you were so invested in impressing our new member, Yuuri!"
     show natsuko at t22
     show yuuri at f21
+    play music t7
     y 7n "---!  I-I..."
     "Yuuri suddenly stands up."
     "Oh boy, things are gettin' real..."
@@ -429,7 +431,6 @@ label ch1_end:
     "It's nice to be able to walk home from school together like we used to."
 
     scene bg residential_day
-    show satori
     with wipeleft_scene
 
     mc "Hey, Satori..."
@@ -466,12 +467,13 @@ label ch1_end:
 label ch1_end_yuri:
     $ ch1_choice = "yuri"
     stop music fadeout 1.0
-    show natsuko at f21
-    show yuuri at t22
+    show natsuko at f22
+    show yuuri at t21
     mc "Natsu..."
     mc "You're right that I liked your poem."
     show natsuko 7y
     n "See??"
+    play music t8
     mc "Hold on!"
     mc "That's no excuse for you to be so mean!"
     mc "Why pick a fight with someone just because their opinion is different from yours?"
@@ -520,7 +522,7 @@ label ch1_end_yuri:
     n 7x "Alright, fine."
     n 7w "I'm sorry, okay?"
     show natsuko at thide
-    show yuuri at shide
+    show yuuri at thide
     hide yuuri
     hide natsuko
     "Natsuko drops back into his seat, crossing his arms in defiance."
@@ -568,7 +570,7 @@ label ch1_end_yuri:
     y 7o "Well..."
     y "Ahem..."
     y 6q "I'm going to go make some tea."
-    show yuuri at shide
+    show yuuri at thide
     hide yuuri
     "Yuuri quickly stands up and scurries away."
     "I sigh and bury my face in my hands."
@@ -629,9 +631,11 @@ label ch1_end_yuri:
 
 label ch1_end_natsuki:
     $ ch1_choice = "natsuki"
+    stop music fadeout 1.0
     mc "Um...Yuuri..."
     show yuuri 1v
     mc "You're insanely talented."
+    play music t8
     mc "But Natsu does have a point."
     mc "I think conveying feelings with a few words can be just as impressive."
     mc "It lets the reader's imagination take over."
@@ -742,14 +746,15 @@ label ch1_end_natsuki:
 label ch1_end_sayori:
     $ ch1_choice = "sayori"
     mc "Natsuko...Yuuri..."
-    show yuuri at 7o at t21
-    show natsuko at 7g at t22
+    show yuuri 7o at t21
+    show natsuko 7g at t22
     "Both stare at me intensely, drying up any words I had in my mouth."
     "I'm gonna need some back up."
     "I look around and see Satori sitting at his chair, flipping through his notebook, seemingly oblivious to everything."
     "I run over and grab him by the arm, dragging him towards the others."
     mc "Satori!"
     show satori 1n at t41
+    stop music fadeout 1.0
     s "Eh?"
     mc "That's right!"
     mc "Everyone's fighting is making Satori uncomfortable."
@@ -763,16 +768,19 @@ label ch1_end_sayori:
     y 6r "I agree. It's unfair for others to interject their feelings into our conflict."
     "Oh, but {i}I'm{/i} expected to interject my feelings into their conflict..."
     n 7w "Yeah! Unless Satori wants to tell Yuuri what a stuck up jerk he's being!"
+    play music t7
     y 6h "He would never!"
     y 6r "It's your immaturity that's made everyone so upset in the first place!"
     n 6f "Excuse me?"
     n "Are you listening to yourself right now?"
     n 5b "This is exactly why nobody likes--..."
+    stop music
     mc "Alright, KNOCK IT OFF!"
     show natsuko 1c
     show yuuri 6t
-    y and n "...!"
+    ny "...!"
     "I surprise everyone with my outburst, including myself."
+    play music t8
     mc "Yuuri, Natsuko."
     mc "You guys are friends."
     mc "And over time, I hope you'll think of me as your friend, too."
@@ -789,11 +797,11 @@ label ch1_end_sayori:
     mc "Not berating each other for not being clones of each other's styles."
     mc "And you know what, Natsu?"
     mc "There's nothing wrong with liking kid stuff! I do too!"
-    show natsuko at 7s
+    show natsuko 7s
     mc "And Yuuri--..."
     "I pause, looking for the least perverted way of saying this..."
-    mc "I'm sure whatever you're packing is 100% natural, and you should be very proud!"
-    show yuuri at 7v
+    mc "I'm sure whatever you're packing is 100 percent natural, and you should be very proud!"
+    show yuuri 7v
     "Nailed it."
     y and n "..."
     s 1d "Gosh, [player]..."
@@ -801,7 +809,7 @@ label ch1_end_sayori:
     "I stand triumphantly."
     "I spot Mateo standing behind everyone else, wearing a curious expression."
     y 6q "I'll... I'll make some tea."
-    show yuri at lhide
+    show yuuri at lhide
     hide yuuri
     "Yuuri hurries away."
     hide natusko
