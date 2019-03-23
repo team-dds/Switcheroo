@@ -27,13 +27,14 @@ label start:
 
         $ chapter = 0
         call ch0_main from ch0_main
-
         call poem
 
+        $ chapter = 1
         call ch1_main
+        call poemresponse_start
+        call ch1_end
 
         #call finale
-
         call endgame
 
         return
