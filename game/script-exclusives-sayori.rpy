@@ -81,10 +81,9 @@ label sayori_exclusive_1:
     mc "You specifically got a new one because the other one was too tight when buttoned up."
     mc "Jeez, come here."
 
-    #show satori cg bg
-    scene black#placeholder
+    scene s_cg1_base
+    show s_cg1_exp1
     with dissolve_cg
-
     "I stand up and start fixing Satori's tie."
     "I tighten it properly and button up the collar of his white undershirt."
     "I tuck the tail into his sweater vest."
@@ -99,6 +98,7 @@ label sayori_exclusive_1:
     mc "Since when do we care what people think about us?"
     mc "You scared you won't get a girlfriend if everyone thinks we're a couple?"
     "Satori's blush intensifies a bit."
+    show s_cg1_exp2 at cgfade
     s "Well, no..."
     s "It's...it's the guys..."
     s "If they think we're a couple, then you won't be able to..."
@@ -109,6 +109,8 @@ label sayori_exclusive_1:
     s "Huh?"
     s "Ah---! N-n-no reason!"
     s "I was just... Uh..."
+    hide s_cg1_exp2
+    show s_cg1_exp4 at cgfade
     s "Jeez, sorry I said anything!"
     "He averts his eyes."
     "Hehe... he's adorable when he's flustered."
@@ -121,10 +123,14 @@ label sayori_exclusive_1:
     "I reach down, my fingers curling into the front of his pants and gripping the waistband."
     "With one assertive but gentle tug, I line the belt buckle with the buttons on Satori's blazer."
     mc "There we go."
+    hide s_cg1_exp4
+    show s_cg1_exp3 at cgfade
     s "Jeez... w-what'd you do that for?"
     s "I could've handled it myself!"
     "I look up at him, smiling playfully."
     mc "Well... Maybe I wanted to handle it today."
+    hide s_cg1_exp3
+    show s_cg1_exp5 at cgfade
     "Satori's face turns bright red."
     "He retreats a few steps."
     s "Gah!"
@@ -132,6 +138,8 @@ label sayori_exclusive_1:
     "I snicker triumphantly."
     "I just can't help myself sometimes."
     mc "Anyway, you look much better now."
+    hide s_cg1_exp5
+    show s_cg1_exp4 at cgfade
     s "Ack--...I can't stand the collar buttoned up like that."
     s "I can hardly breath."
     s "Feels like I'm being strangled."

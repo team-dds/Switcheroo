@@ -158,23 +158,30 @@ label natsuki_exclusive_1:
     "I glance over and jump a little." 
 
     #show natsuko cg bg
-    show black with dissolve_cg
-    hide natsuko
-
+    scene n_cg1_bg
+    show n_cg1_base
+    with dissolve_cg
     "Natsuko is staring right at my face."
     mc "...You, uh...need something?"
+    show n_cg1_exp2 at cgfade
     n "Nope." 
     n "I'm just watching you read."
     mc "Ah. That's not..." 
     mc "Boring for you?"
+    hide n_cg1_exp2
+    show n_cg1_exp1 at cgfade
     n "Not at all." 
     n "It's not every day I get to share my manga and comics with others." 
     n "I'm having fun here."
     mc "Hmm. Well, I can see where you're coming from." 
     mc "I get really happy when I can convince my friends to play a video game with me."
+    hide n_cg1_exp1
+    show n_cg1_exp2 at cgfade
     n "That must be nice." 
     n "Being able to get your friends to experience something you're passionate about."
     mc "You don't share your comics and manga with your friends?"
+    hide n_cg1_exp2
+    show n_cg1_exp3 at cgfade
     n "I wish." 
     n "Most people grow out of comics and manga by a certain age, so everyone just thinks I'm immature for being into it." 
     n "Pisses me off."
@@ -187,7 +194,7 @@ label natsuki_exclusive_1:
     n "I can't keep my collection in my room." 
     n "I don't even know what my mom would do if she found out I have them."
     "I furrow my brows a little."
-    "His mom must {i}really{/i} hate manga..." 
+    "His mom must {i}really{/i} hate manga..."
     n "It's safe here in the clubroom." 
     n "Except when Mateo is being an arrogant jerk about it." 
     n "Sometimes..." 
@@ -195,16 +202,22 @@ label natsuki_exclusive_1:
     mc "Hehe...ditto on that." 
     mc "But hey, at least you get to share your comics with me." 
     mc "And you can rest assured I won't judge."
+    hide n_cg1_exp3
     n "Yeah." 
     n "That's true." 
     n "Thanks, [player]." 
+    show n_cg1_exp1 at cgfade
     n "After all, we comic book-reading, video game-playing losers need to stick together, right?"
     mc "Loser? Hey, speak for yourself!"
     n "Hahaha!"
     mc "Jeez." 
     mc "Are we gonna keep reading or what?"
+    hide n_cg1_exp1
+    show n_cg1_exp2 at cgfade
     n "Yeah, yeah..."
-    "I flip the page." 
+    "I flip the page."
+    hide n_cg1_exp2
+    show n_cg1_exp1 at cgfade
     "Natsuko suddenly bursts out laughing."
     "Right in my ear." 
     "It kinda startles me."
@@ -213,20 +226,21 @@ label natsuki_exclusive_1:
     n "Moji is my favorite character!" 
     n "He's the comic relief but you always kinda feel bad laughing at him because of how unlucky he is." 
     n "It gets especially bad when..." 
+    hide n_cg1_exp1
+    show n_cg1_exp3 at cgfade
     n "Uh...hmm...maybe I shouldn't be talking about that." 
+    show n_cg1_exp2 at cgfade
     n "Just keep reading!" 
     n "You'll see."
 
     scene bg club_day 
     with dissolve_cg
-
     "Natsuko's voice sparkles with excitement, but he explains everything in a surprisingly slow and detailed manner." 
     "It's a stark contrast from his usual fast-talking, flippant behavior." 
     "But, if he's not used to sharing his comics with his friends, I can understand his eagerness." 
     "It's hard to put into words the feeling you get when you connect with someone like that." 
     "I'm more than happy to indulge him like this though." 
     "Seeing him happy makes me smile to myself." 
-
     show mateo 4k at t11
     m "Alright, guys!"
     mc "Hmm?"

@@ -137,31 +137,25 @@ image y_cg2_dust4:
         linear 19.0 xoffset -100 yoffset 100
         repeat
 
-## Natsuki Reading Manga CG
+## Natsuko Reading Fiction CG
 
-# Background
+# Background/Base
 image n_cg1_bg:
     "images/cg/n_cg1_bg.png"
 image n_cg1_base:
-    "images/cg/n_cg1_base.png"
+    "images/cg/natsuko_cg1.png"
 
 # Expressions
 
-# Happy Natsuki
+# Happy Natsuko
 image n_cg1_exp1:
-    "images/cg/n_cg1_exp1.png"
-# Angry Natsuki
+    "mod_assets/images/cg/natsuko_cg4.png"
+# Smirk Natsuko
 image n_cg1_exp2:
-    "images/cg/n_cg1_exp2.png"
-# Angry Natsuki 2
+    "mod_assets/images/cg/natsuko_cg2.png"
+# Huh?
 image n_cg1_exp3:
-    "images/cg/n_cg1_exp3.png"
-# Eyes closed
-image n_cg1_exp4:
-    "images/cg/n_cg1_exp4.png"
-# Eyes halflidded
-image n_cg1_exp5:
-    "images/cg/n_cg1_exp5.png"
+    "mod_assets/images/cg/natsuko_cg3.png"
 
 # Glitched Natsuki CG
 image n_cg1b = LiveComposite((1280,720), (0,0), "images/cg/n_cg1b.png", (882,325), "n_rects1", (732,400), "n_rects2", (850,475), "n_rects3")
@@ -214,25 +208,33 @@ image n_cg3_exp1:
 image n_cg3_exp2:
     "images/cg/n_cg3_exp2.png"
 
-# Yuri Readtime CG
+# Yuuri Readtime CG (BETA Testing)
 
 # Base Image with Yuri and Classroom
 image y_cg1_base:
-    "images/cg/y_cg1_base.png"
+    "mod_assets/images/cg/yuuri_cg_bg.png"
 
 # Expressions
 
 # Side-eye at MC/Camera
 image y_cg1_exp1:
-    "images/cg/y_cg1_exp1.png"
+    "mod_assets/images/cg/yuuri_cg1.png"
 
-# Mouth Open Yuri
+# Talking
 image y_cg1_exp2:
-    "images/cg/y_cg1_exp2.png"
+    "mod_assets/images/cg/yuuri_cg2.png"
 
-# Yandere Yuri
+# Ooh? Huh?
 image y_cg1_exp3:
-    "images/cg/y_cg1_exp3.png"
+    "mod_assets/images/cg/yuuri_cg3.png"
+
+# Uh... Worried Yuuri
+image y_cg1_exp4:
+    "mod_assets/images/cg/yuuri_cg4.png"
+
+# Hide Blush Yuuri
+image y_cg1_exp5:
+    "mod_assets/images/cg/yuuri_cg5.png"
 
 # Yuri MC Room CG
 image y_cg3_base:
@@ -242,9 +244,29 @@ image y_cg3_base:
 image y_cg3_exp1:
     "images/cg/y_cg3_exp1.png"
 
-# Sayori Blazer CG
-image s_cg1:
-    "images/cg/s_cg1.png"
+# Satori Blazer CG
+image s_cg1_base:
+    "mod_assets/images/cg/closet_wall.png"
+
+# Awkward
+image s_cg1_exp1:
+    "mod_assets/images/cg/satori_cg1.png"
+
+# Nervous/Ehehe...
+image s_cg1_exp2:
+    "mod_assets/images/cg/satori_cg2.png"
+
+# Upset Satori
+image s_cg1_exp3:
+    "mod_assets/images/cg/satori_cg3.png"
+
+# Uh... Worried Satori
+image s_cg1_exp4:
+    "mod_assets/images/cg/satori_cg4.png"
+
+# Hide Blush Satori
+image s_cg1_exp5:
+    "mod_assets/images/cg/satori_cg5.png"
 
 # Hurt Sayori CG
 

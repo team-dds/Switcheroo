@@ -150,7 +150,8 @@ label yuri_exclusive_1:
     y 1c "Not at all."
 
     #scene y_cg1_base with dissolve_cg
-    scene black
+    scene y_cg1_base
+    show y_cg1_exp1
     with dissolve_cg
     "Yuuri opens the book."
     "I squint my eyes a bit."
@@ -159,6 +160,7 @@ label yuri_exclusive_1:
     "But now, we're huddled even closer than before."
     "It's kind of distracting."
     "It's almost as if I can feel the warmth of Yuuri's face and he's in the corner of my vision."
+    show y_cg1_exp2 at cgfade
     y "Are you ready?"
     mc "Huh?"
     y "For me to turn the page?"
@@ -168,16 +170,20 @@ label yuri_exclusive_1:
     "I glance over at Yuuri and our eyes meet."
     "There's no way I'll be able to keep up with him."
     "I'm not exactly a speed-reader."
+    hide y_cg1_exp2
+    show y_cg1_exp2 at cgfade
     y "Ah, that's okay."
     y "I'm sure the small font isn't helping much."
     y "So I don't mind being patient if it takes you a bit longer."
     y "Just let me know when you're ready, okay?"
     mc "Thanks! I appreciate it!"
+    hide y_cg1_exp2
     "We continue reading."
     "Yuuri no longer asks if I'm ready for him to turn the page."
     "He leaves it open just the right amount of time for me to finish before turning it of his own volition."
     "We continue the first chapter in silence."
     mc "Hey Yuuri..."
+    show y_cg1_exp2 at cgfade
     y "Hmm?"
     mc "What's this word mean?"
     "I lean in and point to a word I don't recognize that's being used metaphorically."
@@ -205,7 +211,11 @@ label yuri_exclusive_1:
     "It's no secret that I like to flirt..."
     "But when someone like Yuuri flirts back..."
     "It's almost more than I can handle."
+    hide y_cg1_exp2
+    show y_cg1_exp3 at cgfade
     y "...!"
+    hide y_cg1_exp3
+    show y_cg1_exp4 at cgfade
     y "Um..."
     y "[player]..."
     mc "Hmm?"
@@ -215,9 +225,12 @@ label yuri_exclusive_1:
     "My eyes widen as I feel his arm move around a bit beneath me."
     "I look down."
     mc "...!"
+    hide y_cg1_exp4
+    show y_cg1_exp5 at cgfade
     "I must've become too relaxed, because I find myself draped over his arm, leaning on it as though it were a pillow."
     "My chest is resting right against him."
     "I squeal and leap away."
+
     scene bg club_day
     show yuuri 6q at t11
     mc "Gah!"
