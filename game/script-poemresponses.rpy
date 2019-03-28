@@ -2275,7 +2275,7 @@ label ch3_y_good:
 
 
 label ch1_m_start:
-    show mateo at 1d
+    show mateo 1d at t11 zorder 2
     m "So, [player]... Having fun so far?"
     mc "Um, yeah. Absolutely." 
     m 1ab "I suppose that's good, then."
@@ -2453,7 +2453,7 @@ label m_yuri_1:
     mc "I get it!"
     mc "I'll work on my handwriting! Jeez!"
     mc "You don't have to be such a jerk about it."
-    show mateo at 1k
+    show mateo 1k
     "Mateo chuckles again, a bit louder this time."
     "His smug attitude only pisses me off even more."
     m 3v "Actually...it would be a great poem if your handwriting weren't so distractingly bad."

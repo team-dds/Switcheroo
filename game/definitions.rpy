@@ -134,7 +134,10 @@ define audio.fall = "sfx/fall.ogg"
 define audio.door_knock = "mod_assets/audio/door_knock.wav"
 define audio.fall3 = "mod_assets/audio/fall3.wav"
 define audio.ohayou_satori = "mod_assets/audio/ohayou_satori.mp3"
-define audio.MainMenu="<loop 22.073>mod_assets/audio/main_theme.mp3" #NEW as of 11:50AM 9/21/2018
+define audio.MainMenu="<loop 15.273>mod_assets/audio/main_theme.mp3"
+define audio.okay_everyone = "<loop 7.444>mod_assets/audio/okay_everyone.mp3"
+define audio.play_with_me = "<loop 4.444>mod_assets/audio/play_with_me.mp3"
+define audio.poem_panic = "<loop 50.544>mod_assets/audio/poem_panic.ogg"
 
 # Backgrounds
 image black = "#000000"
