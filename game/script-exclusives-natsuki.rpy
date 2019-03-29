@@ -6,8 +6,9 @@ label natsuki_exclusive_1:
     "He seems to be annoyed by something." 
     "I approach, in case he needs a hand."
 
+    play music play_with_me fadeout 1
     scene bg closet
-    with dissolve_scene_half
+    with wipeleft_scene
     show natsuko 6x at t11
     mc "You need help looking for something in there?"
     n "Frigging Mateo!"
@@ -70,7 +71,7 @@ label natsuki_exclusive_1:
     "I grab Natsuko's arm and pull him out of the closet." 
 
     show bg club_day
-
+    with wipeleft_scene
     "I take a seat against the wall, beneath the windowsills." 
     "I pat the ground next to me, signaling him to sit there." 
     "He takes his seat."

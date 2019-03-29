@@ -6,6 +6,7 @@ label yuri_exclusive_1:
     "I catch a glimpse of the cover of his book."
     "It looks like the same book he gave to me."
     "More than that, he seems to be on the first few pages."
+    play music play_with_me fadeout 1.0
     show yuuri 1f at t11
     y "Ah..."
     "Crap."

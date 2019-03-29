@@ -3,8 +3,8 @@ label poemresponse_start:
     $ skip_transition = False
     label poemresponse_loop:
         $ skip_poem = False
-        if renpy.music.get_playing() and not (renpy.music.get_playing() == audio.t5 or renpy.music.get_playing() == audio.t5c):
-            $ renpy.music.play(audio.t5, fadeout=1.0, if_changed=True)
+        if renpy.music.get_playing() and not (renpy.music.get_playing() == audio.okay_everyone or renpy.music.get_playing() == audio.t5c):
+            $ renpy.music.play(audio.okay_everyone, fadeout=1.0, if_changed=True)
         if skip_transition:
             scene bg club_day
         else:
@@ -12,7 +12,7 @@ label poemresponse_start:
             with wipeleft_scene
         $ skip_transition = False
         if not renpy.music.get_playing():
-            play music t5
+            play music okay_everyone
     label poemresponse_start2:
         $ skip_poem = False
         if persistent.playthrough == 2:

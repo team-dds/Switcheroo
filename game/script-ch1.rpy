@@ -1,7 +1,7 @@
 label ch1_main:
     scene bg club_day
     with dissolve_scene_half
-    play music MainMenu
+    play music ohayou_satori
     show mateo 1b zorder 2 at t11
     m "...? Ah. You came back..."
     mc "Yep."
@@ -245,7 +245,7 @@ label ch1_main:
 label ch1_end:
     scene bg club_day
     with wipeleft_scene
-    play music MainMenu
+    play music ohayou_satori
     "Phew."
     "I guess that's everyone."
     "I glance around the room."
@@ -318,7 +318,7 @@ label ch1_end:
     n 1y "Oh? I didn't realize you were so invested in impressing our new member, Yuuri!"
     show natsuko at t22
     show yuuri at f21
-    play music t7
+    play music poem_panic
     y 7n "---!  I-I..."
     "Yuuri suddenly stands up."
     "Oh boy, things are gettin' real..."
