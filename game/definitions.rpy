@@ -82,40 +82,39 @@ init python:
 # t1 - tells Ren'Py the label of the music/sound file
 # <loop 22.073> - tells Ren'Py to loop the song at that time interval
 # "bgm/1.ogg" - location of your music
-define audio.t1 = "<loop 22.073>bgm/1.ogg"  #Main theme (title)
-define audio.t2 = "<loop 4.499>bgm/2.ogg"   #satori theme
-define audio.t2g = "bgm/2g.ogg"
-define audio.t2g2 = "<from 4.499 loop 4.499>bgm/2.ogg"
-define audio.t2g3 = "<loop 4.492>bgm/2g2.ogg"
-define audio.t3 = "<loop 4.618>bgm/3.ogg"   #Main theme (in-game)
+define audio.t1 = "<loop 7.613>mod_assets/audio/main_theme.mp3" #Title theme
+define audio.t2 = "<loop 0.026 to 156.290>mod_assets/audio/ohayou_satori.mp3" #Ohayou Satori!
+define audio.t2g = "bgm/2g.ogg" #Ohayou Satori! Wobbly Section
+define audio.t2g2 = "<from 4.499 loop 4.499>bgm/2.ogg" #Ohayou Satori! Rapid Glitch
+define audio.t2g3 = "<loop 4.492>bgm/2g2.ogg" #Ohayou Satori! Gradual Pitch Increase
+define audio.t3 = "<loop 0.027 to 56.024>mod_assets/audio/in_game_main_theme.mp3"   #Main theme (in-game theme)
 define audio.t3g = "<to 15.255>bgm/3g.ogg"
-define audio.t3g2 = "<from 15.255 loop 4.618>bgm/3.ogg"
+define audio.t3g2 = "<from 15.255 loop 4.618>bgm/3.ogg" 
 define audio.t3g3 = "<loop 4.618>bgm/3g2.ogg"
-define audio.t3m = "<loop 4.618>bgm/3.ogg"
-define audio.t4 = "<loop 19.451>bgm/4.ogg"  #Poem minigame
-define audio.t4g = "<loop 1.000>bgm/4g.ogg"
-define audio.t5 = "<loop 4.444>bgm/5.ogg"   #Sharing poems...... 'Okay Everyone~!'
+define audio.t4 = "<loop 57.630>mod_assets/audio/poem_game.mp3"  #Poemgame
+define audio.t4g = "<loop 1.000>bgm/4g.ogg" #Static and Error
+define audio.t5 = "<loop 7.444>mod_assets/audio/okay_everyone.mp3"   #Okay Everyone!
 
 # Doki Poem Theme
-define audio.tmonika = "<loop 4.444>bgm/5_monika.ogg" # Okay Everyone! (Monika)
-define audio.tsayori = "<loop 4.444>bgm/5_sayori.ogg" # Okay Everyone! (Sayori)
-define audio.tnatsuki = "<loop 4.444>bgm/5_natsuki.ogg" # Okay Everyone! (Natsuki)
-define audio.tyuri = "<loop 4.444>bgm/5_yuri.ogg" # Okay Everyone! (Yuri)
+define audio.tmateo = "<loop 4.444>bgm/5_monika.ogg" #Okay Everyone! (Mateo)
+define audio.tsatori = "<loop 4.444>bgm/5_sayori.ogg" #Okay Everyone! (Satori)
+define audio.tnatsuko = "<loop 4.444>bgm/5_natsuki.ogg" #Okay Everyone! (Natsuko)
+define audio.tyuuri = "<loop 4.444>bgm/5_yuri.ogg" #Okay Everyone! (Yuuri)
 
 define audio.t5b = "<loop 4.444>bgm/5.ogg"
 define audio.t5c = "<loop 4.444>bgm/5.ogg"
-define audio.t6 = "<loop 10.893>bgm/6.ogg"  #mod_assets/images/yuuri/natsuko theme
+define audio.t6 = "<loop 4.414>mod_assets/audio/play_with_me.mp3" #Play With Me
 define audio.t6g = "<loop 10.893>bgm/6g.ogg"
 define audio.t6r = "<to 39.817 loop 0>bgm/6r.ogg"
 define audio.t6s = "<loop 43.572>bgm/6s.ogg"
-define audio.t7 = "<loop 2.291>bgm/7.ogg"   #Causing trouble
+define audio.t7 = "<loop 3.898>mod_assets/audio/poem_panic.mp3" #Poem Panic!
 define audio.t7a = "<loop 4.316 to 12.453>bgm/7.ogg"
 define audio.t7g = "<loop 31.880>bgm/7g.ogg"
-define audio.t8 = "<loop 9.938>bgm/8.ogg"   #Trouble resolved
-define audio.t9 = "<loop 3.172>bgm/9.ogg"   #Emotional
-define audio.t9g = "<loop 1.532>bgm/9g.ogg" #207% speed
+define audio.t8 = "<loop 8.324>mod_assets/audio/daijoubu.mp3" #Daijoubu
+define audio.t9 = "<loop 3.172>bgm/9.ogg"   #My Feelings
+define audio.t9g = "<loop 1.532>bgm/9g.ogg" #207% speed (My Feelings)
 define audio.t10 = "<loop 5.861>bgm/10.ogg"   #Confession
-define audio.t10y = "<loop 0>bgm/10-yuuri.ogg"
+define audio.t10y = "<loop 0>bgm/10-yuuri.ogg" #Yuri Confession
 define audio.td = "<loop 36.782>bgm/d.ogg"
 
 define audio.m1 = "<loop 0>bgm/m1.ogg" # Just Monika. - Just Monika.
@@ -129,15 +128,9 @@ define audio.hb = "<loop 0>bgm/heartbeat.ogg"
 define audio.closet_open = "sfx/closet-open.ogg"
 define audio.closet_close = "sfx/closet-close.ogg"
 define audio.page_turn = "sfx/pageflip.ogg"
-define audio.fall = "sfx/fall.ogg"
-
+define audio.fall = "mod_assets/audio/fall3.wav"
 define audio.door_knock = "mod_assets/audio/door_knock.wav"
-define audio.fall3 = "mod_assets/audio/fall3.wav"
-define audio.ohayou_satori = "mod_assets/audio/ohayou_satori.mp3"
-define audio.MainMenu="<loop 15.273>mod_assets/audio/main_theme.mp3"
-define audio.okay_everyone = "<loop 7.444>mod_assets/audio/okay_everyone.mp3"
-define audio.play_with_me = "<loop 4.444>mod_assets/audio/play_with_me.mp3"
-define audio.poem_panic = "<loop 50.544>mod_assets/audio/poem_panic.ogg"
+
 
 # Backgrounds
 image black = "#000000"
