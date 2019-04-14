@@ -190,19 +190,20 @@ transform menu_art_move(z, x, z2):
 image intro:
     truecenter
     "white"
-    0.5
-    "bg/splash.png" with Dissolve(0.5, alpha=True)
-    2.5
-    "white" with Dissolve(0.5, alpha=True)
-    0.5
+    0.4
+    "bg/splash.png" with Dissolve(0.4, alpha=True)
+    2.0
+    "white" with Dissolve(0.4, alpha=True)
+    0.4
 
 # Special Mod Message Text
 
 image warning:
     truecenter
     "white"
+    0.5
     "splash_warning" with Dissolve(0.5, alpha=True)
-    2.5
+    2.0
     "white" with Dissolve(0.5, alpha=True)
     0.5
 
@@ -424,18 +425,18 @@ label splashscreen:
     show white
     $ persistent.ghost_menu = False
     $ splash_message = splash_message_default
-    $ config.main_menu_music = audio.MainMenu
+    $ config.main_menu_music = audio.t1
     $ renpy.music.play(config.main_menu_music)
     $ starttime = datetime.datetime.now()
-    show intro with Dissolve(0.5, alpha=True)
-    $ pause(3.0 - (datetime.datetime.now() - starttime).total_seconds())
-    hide intro with Dissolve(max(0, 3.5 - (datetime.datetime.now() - starttime).total_seconds()), alpha=True)
+    show intro with Dissolve(0.4, alpha=True)
+    $ pause(2.4 - (datetime.datetime.now() - starttime).total_seconds())
+    hide intro with Dissolve(max(0, 2.8 - (datetime.datetime.now() - starttime).total_seconds()), alpha=True)
     if persistent.playthrough == 2 and renpy.random.randint(0, 3) == 0:
         $ splash_message = renpy.random.choice(splash_messages)
-    show splash_warning "[splash_message]" with Dissolve(max(0, 4.0 - (datetime.datetime.now() - starttime).total_seconds()), alpha=True)
-    $ pause(6.0 - (datetime.datetime.now() - starttime).total_seconds())
-    hide splash_warning with Dissolve(max(0, 6.5 - (datetime.datetime.now() - starttime).total_seconds()), alpha=True)
-    $ pause(6.5 - (datetime.datetime.now() - starttime).total_seconds())
+    show splash_warning "[splash_message]" with Dissolve(max(0, 3.2 - (datetime.datetime.now() - starttime).total_seconds()), alpha=True)
+    $ pause(4.8 - (datetime.datetime.now() - starttime).total_seconds())
+    hide splash_warning with Dissolve(max(0, 5.2 - (datetime.datetime.now() - starttime).total_seconds()), alpha=True)
+    $ pause(5.2 - (datetime.datetime.now() - starttime).total_seconds())
     $ config.allow_skipping = True
     return
 
@@ -479,7 +480,7 @@ label autoload:
     jump expression persistent.autoload
 
 label before_main_menu:
-    $ config.main_menu_music = audio.MainMenu
+    $ config.main_menu_music = audio.t1
     return
 
 label quit:

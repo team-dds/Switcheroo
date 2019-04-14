@@ -82,8 +82,8 @@ init python:
 # t1 - tells Ren'Py the label of the music/sound file
 # <loop 22.073> - tells Ren'Py to loop the song at that time interval
 # "bgm/1.ogg" - location of your music
-define audio.t1 = "<loop 7.613>mod_assets/audio/main_theme.mp3" #Title theme
-define audio.t2 = "<loop 0.026 to 156.290>mod_assets/audio/ohayou_satori.mp3" #Ohayou Satori!
+define audio.t1 = "<to 138.026 loop 15.396 to 138.026>mod_assets/audio/main_theme.mp3" #Title theme
+define audio.t2 = "<to 156.290 loop 0.026 to 78.290>mod_assets/audio/ohayou_satori.mp3" #Ohayou Satori!
 define audio.t2g = "bgm/2g.ogg" #Ohayou Satori! Wobbly Section
 define audio.t2g2 = "<from 4.499 loop 4.499>bgm/2.ogg" #Ohayou Satori! Rapid Glitch
 define audio.t2g3 = "<loop 4.492>bgm/2g2.ogg" #Ohayou Satori! Gradual Pitch Increase
@@ -130,7 +130,6 @@ define audio.closet_close = "sfx/closet-close.ogg"
 define audio.page_turn = "sfx/pageflip.ogg"
 define audio.fall = "mod_assets/audio/fall3.wav"
 define audio.door_knock = "mod_assets/audio/door_knock.wav"
-
 
 # Backgrounds
 image black = "#000000"
