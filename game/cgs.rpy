@@ -141,9 +141,9 @@ image y_cg2_dust4:
 
 # Background/Base
 image n_cg1_bg:
-    "images/cg/n_cg1_bg.png"
+    "mod_assets/images/cg/n_cg1_bg.png"
 image n_cg1_base:
-    "images/cg/natsuko_cg1.png"
+    "mod_assets/images/cg/natsuko_cg1.png"
 
 # Expressions
 
@@ -208,7 +208,7 @@ image n_cg3_exp1:
 image n_cg3_exp2:
     "images/cg/n_cg3_exp2.png"
 
-# Yuuri Readtime CG (BETA Testing)
+# Yuuri Readtime CG
 
 # Base Image with Yuri and Classroom
 image y_cg1_base:

@@ -39,6 +39,9 @@ label start:
         # from in your script files
         # Make sure to remove this when coding your mod, else your player
         # will face the tutorial or get a error
+
+        #call cgtest
+
         $ chapter = 0
         call ch0_main
         call poem

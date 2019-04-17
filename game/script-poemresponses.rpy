@@ -2277,7 +2277,7 @@ label ch3_y_good:
 label ch1_m_start:
     show mateo 1d at t11 zorder 2
     m "So, [player]... Having fun so far?"
-    mc "Um, yeah. Absolutely." 
+    mc "Um, yeah. Absolutely."
     m 1ab "I suppose that's good, then."
     m 6d "By the way, since you're new and all..."
     m 4d "If you ever have any suggestions for the club..."
@@ -2295,15 +2295,15 @@ label ch1_m_start:
     "I hand the horse's ass my poem."
     m 6j "Hmhmhmhmhm..."
     "Mateo chuckles softly to himself."
-    $ nextscene = "m_" + poemwinner[1] + "_" + str(eval(poemwinner[1][0] + "_appeal"))
+    $ nextscene = "m_" + poemwinner[0] + "_" + str(eval(poemwinner[0][0] + "_appeal"))
     call expression nextscene
-    
-    m 1j "Anyway, are you ready to read my poem now?" 
+
+    m 1j "Anyway, are you ready to read my poem now?"
     mc "Yeah. Looking forward to it."
     m 6v "You sound thrilled."
     mc "I mean... we both know you're going to make me look like an untalented hack."
     mc "So I'm sorry I'm not leaping for joy at that opportunity."
-    m 4r "It's not my fault you choose to see it that way." 
+    m 4r "It's not my fault you choose to see it that way."
     mc "Whatever. Let's just see it already."
     return
 
@@ -2460,20 +2460,20 @@ label m_yuri_1:
     m 1j "I wasn't expecting you to go for something so deep."
     m 4k "I'm impressed."
     mc "Well...crappy handwriting aside, I guess my effort kinda blew away your low expectations of me, didn't it?"
-    m 6n "Alright, alright." 
-    m 6u "Don't get too proud of yourself." 
+    m 6n "Alright, alright."
+    m 6u "Don't get too proud of yourself."
     m 6w "It's a pretty good poem."
-    m 4v "From the small assembly of letters I could actually decipher as words, it sounds like something Yuuri would like." 
-    m 4d "He loves writing that's full of imagery and symbolism." 
-    m 4r "This style leaves readers to derive their own meaning out of it." 
-    m 4q "It's actually very challenging to write like that effectively." 
-    m "It can take years of practice, which I'm assuming Yuuri has at this point." 
-    m 4a "But you..." 
+    m 4v "From the small assembly of letters I could actually decipher as words, it sounds like something Yuuri would like."
+    m 4d "He loves writing that's full of imagery and symbolism."
+    m 4r "This style leaves readers to derive their own meaning out of it."
+    m 4q "It's actually very challenging to write like that effectively."
+    m "It can take years of practice, which I'm assuming Yuuri has at this point."
+    m 4a "But you..."
     m 1b "You seem to be a bit of a natural."
-    mc "Well, I mean..." 
+    mc "Well, I mean..."
     mc "I'm sure I'm nowhere near his level yet."
-    m 1s "I agree." 
-    m 4t "Your use of imagery may be impressive, but you still obviously have a lot to learn." 
+    m 1s "I agree."
+    m 4t "Your use of imagery may be impressive, but you still obviously have a lot to learn."
     m 6k "You're not a lost cause just yet."
     mc "I definitely plan on trying different things."
     mc "It will take a while before I feel comfortable doing this."
