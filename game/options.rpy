@@ -11,7 +11,7 @@ define gui.show_name = True
 # This is where you will input the version of your mod.
 # If you have multiple versions of your mod, this will be pretty useful to change.
 # If you are starting out, set this to "1.0.0"
-define config.version = "1.3.0"
+define config.version = "1.4.0"
 
 # This adds information about your mod in the About section.
 # DDLC does not have a about section so you can leave this blank.
@@ -20,7 +20,7 @@ define gui.about = _("")
 # This is the name of your build that the Ren'Py SDK will read.
 # The build name is ASCII only so no numbers, spaces, or semicolons.
 # Example: Doki Doki Yuri Time to DokiDokiYuriTime
-define build.name = "DDSDemo"
+define build.name = "DDS_Demo"
 
 # This configures whether your mod has sound effects (e.g. slap sound effects) or not.
 # It is best to leave this set to True default.
@@ -37,7 +37,7 @@ define config.has_voice = False
 # This configures what song/music will play when you launch your mod.
 # audio.t1 is the Doki Doki Literature Club Main Menu Music.
 # If you want to change this, change the "t1" to the song you want.
-define config.main_menu_music = audio.MainMenu
+define config.main_menu_music = audio.t1
 
 # These two settings control the transition effects of DDLC on the game menu.
 # Dissolve(.2) sets the transition effect you see.

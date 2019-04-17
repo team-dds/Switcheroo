@@ -39,7 +39,7 @@ label ch0_main:
     scene bg kitchen
     show black zorder 2
     with dissolve_scene_full
-    play sound fall3 #call variable
+    play sound fall #call variable
     "Before I know it, we collide and crash down the stairs."
     "Our book bags spill papers and books everywhere."
     "I land on top of Satori's back."
@@ -53,7 +53,7 @@ label ch0_main:
 
     scene bg residential_day
     with dissolve_scene_full
-    play music ohayou_satori #Call the Ohayo Satori custom song
+    play music t2 #Ohayou Satori
     "We walk across the street together and make our way to school."
     show satori 10z at t11 zorder 2
     "I look over at Satori who is cheerfully walking next to me."
@@ -69,7 +69,7 @@ label ch0_main:
     s 1ac "You were up all night playing video games again, weren't you?"
     "There's a little sass in his tone."
     "I like it."
-    mc "Maybe... "
+    mc "Maybe..."
     "He growls and shoots me a glare."
     show satori 1i at t11 zorder 2
     "I smile to myself."
@@ -161,6 +161,7 @@ label ch0_main:
     mc "I'll be a good girl."
     "He tells me where to find the clubroom and we head inside, miraculously making it to class just before the bell."
 
+    stop music fadeout 2.0
     scene bg class_day
     with wipeleft_scene
     "The school day is as boring as ever and, after what feels like an eternity, it's finally over."
@@ -171,7 +172,6 @@ label ch0_main:
     "I lower my brows as I get up from my seat."
     mc "Wow, that was incredibly dumb of me."
 
-    stop music fadeout 2.0
     scene bg corridor
     with wipeleft_scene
     "I leave the classroom and make my way across the school."
@@ -180,7 +180,7 @@ label ch0_main:
 
     scene bg club_day
     with wipeleft
-    play music MainMenu ##Call the definition of the main song here
+    play music t3 ##Call the definition of the main song here
     show satori 5r at t11 zorder 2
     $ y_name = "Guy 1"
     $ n_name = "Guy 2"
@@ -715,7 +715,8 @@ label ch0_main:
 
     scene bg residential_day
     with wipeleft_scene
-    play music ohayou_satori #Call the custom Ohayo Satori
+    stop music fadeout 1.0
+    play music t2 #Call the custom Ohayo Satori
     "With that, the two of us depart the clubroom and make our way home."
     show satori 1aa at t11 zorder 2
     s "So, what do you think of the club, [player]?"

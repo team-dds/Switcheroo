@@ -1,113 +1,120 @@
 label ch1_main:
     scene bg club_day
     with dissolve_scene_half
-    play music ohayou_satori
+    play music t3
     show mateo 1b zorder 2 at t11
     m "...? Ah. You came back..."
     mc "Yep."
     mc "I told you I'm serious about this."
     mc "It might be a little strange for me, but at least I keep my word."
     hide mateo
-    "Well, I'm back at the Literature Club."
+    "Well, I'm back at the Literature Club." 
     "I'm the last one to come in and-- ..."
     "Wait... What's that smell? Is that food?"
-    show yuuri 1b zorder 2 at t32
+    show yuuri 1b at t11
     y "Thank you for keeping your promise, [player]."
-    y "I hope this isn't too overwhelming of a commitment for you."
+    y "I hope this isn't too overwhelming of a commitment for you." 
     y 1i "Making you dive head first into literature when you're not accustomed to it..."
     "I sniff the air some more."
     "There's definitely food in here."
     "I'm positive I smell confectioners sugar."
     "Where is it coming from?"
-    show natsuko 7y zorder 3 at f33
-    n "Don't feel too sorry for her, Yuuri."
+    show yuuri t22
+    show natsuko 7y at f21
+    n "Don't feel too sorry for her, Yuuri."   
     n 7ah "Satori told me this naughty girl didn't even want to join any clubs this year."
     n "Last year too."
-    n 3y "I sure hope you intend on taking us seriously, Missy, or you won't see the end of it!"
-    show natsuko at t33
+    n 3y "I sure hope you intend on taking us seriously, Missy, or you won't see the end of it!" 
     "Aha! Shorty's got the sugar."
-    "I approach him and sniff the air around him."
-    show natsuko 5h
+    "I approach him and sniff the air around him." 
+    show natsuko 5h at t21
     mc "You smell like cupcakes or something."
     mc "Do you have food?"
-    show satori 3z zorder 2 at f31
+    show natsuko at t32
+    show yuuri at t33
+    show satori at f31
     s "Ha! Told you she'd smell it as soon as she walks in!"
-    s "She's got a nose like a bloodhound when it comes to food!"
-    "Satori playfully leans on me, his arm draped over my shoulder."
+    s "She's got a nose like a bloodhound when it comes to food!"   
+    "Satori playfully leans on me, his arm draped over my shoulder." 
+    show natsuko at f32
     show satori at t31
-    show natsuko at f33
-    n 7q "Aw, man. I wanted it to be a surprise!"
+    n 7q "Aw, man. I wanted it to be a surprise!" 
     "Natsuko pouts."
-    show natsuko at t33
     mc "Trust me, I'm surprised."
-    mc "Also, super hungry."
+    mc "Also, super hungry." 
+    show natsuko at t32
     show satori at f31
     s 7q "I better get the tray before she devours us all."
+    show natsuko at f32
     show satori at t31
-    show natsuko at f33
     n 6e "Hey, I brought them! I'll get them!"
+    show natsuko zorder 1 at thide
     hide natsuko
     "Natsuko heads to the back of the classroom and retrieves a tray covered with tin foil."
-    show yuuri 1b at f22
-    show satori at t21
-    y "And while we're at it, I'll make some tea as well."
+    y 1b "And while we're at it, I'll make some tea as well."
+    show yuuri zorder 1 at thide
     hide yuuri
-    show satori at t11
-    "Satori suddenly leans into me and mutters into my ear."
-    s 1aq "Stop sniffing the club members, you weirdo."
+    pause 1.0
+    $ _history = False
+    "{nw}"
+    $ _history = True
+    show satori 1aq at face
+    "{fast}Satori suddenly leans into me and mutters into my ear."
+    s "Stop sniffing the club members, you weirdo." 
     "I give Satori a sniff and wrinkle my nose in distaste."
     mc "You need to wash your blazer."
-    show satori 1ac
+    show satori 1ac at face
     s 1aa "You need to wash your hair."
     "He gives my ponytail a gentle tug."
     mc "Hey!"
-    show satori at t21
-    show natsuko 1z at f22
+    show satori 1ac at t22
+    show natsuko 1z at f21
     "Natsuko sets the tray on the desk in front of me and dramatically peels back the tin foil."
     n "Ta-da!"
     show satori 1n
-    show natsuko at t22
     mc "Whoa!"
     "I stare in awe as he reveals a dozen fresh cream-filled donuts."
     "The words Literature Club are written in chocolate icing on each donut."
     mc "Natsu, those look amazing!"
-    show natsuko at f22
     n "Hehe! Well...I usually do stuff like this on days we get a new member..."
     n 3d "But, you came in so suddenly I didn't have a chance to."
     n 7z "So, I figured I'd do it today! Hurry up and take one!"
-    show natsuko at t22
     "Satori and I each reach for one."
-    show satori at f21
+    show satori 1ac at f22
+    show natsuko 1z at t21
     s 4s "Mmm...these are awesome!"
+    show satori 1ac at t22
     "I rotate the donut in my hand, looking for the best angle to take a bite."
     show natsuko 5k
     "Natsuko is quiet."
     "I can't help but notice him sneaking glances in my direction."
-    "Is he waiting for me to taste it?"
-    "I end up stuffing the entire thing into my mouth."
-    "The pastry is flaky and the icing is sweet and full of flavor."
+    "Is he waiting for me to taste it?"  
+    "I end up stuffing the entire thing into my mouth." 
+    "The pastry is flaky and the icing is sweet and full of flavor."  
     mc "Ifs dericious! Fank you, Nafu!"
     show satori 1i
-    "Satori groans into his hand."
+    "Satori groans into his hand."   
     "Clearly I have learned nothing from our previous conversation regarding my questionable social skills."
+    show satori at thide
     hide satori
-    show natsuko at t11
-    n 7z "Ha! No need to thank me."
+    show natsuko 7z at t11
+    n "Ha! No need to thank me." 
     "I finish chewing and swallowing, my eyes already locked on my next tasty victim."
-    mc "These taste homemade."
+    mc "These taste homemade."   
     mc "Did you make them yourself?"
     show natsuko 6m
     "Natsuko suddenly blushes and turns away, clearly bothered by my question."
-    n 7u "N-n-no way...Baking is for girls."
+    n 7u "N-n-no way...Baking is for girls."  
     n "My mom just runs a bakery, that's all."
-    n "So that's why they taste homemade."
-    n "They are...but, I just brought them."
+    n "So that's why they taste homemade." 
+    n "They are...but, I just brought them."  
     n 7s "No big deal or anything..."
     "He mutters that last part."
     "I didn't mean to offend him."
     "I awkwardly stare at him as I grab the other donut and slowly shove that one into my face."
+    show natsuko at thide
     hide natsuko
-    show satori 1j at t11
+    show satori 1j at s11
     "Satori nudges me."
     s "Stop...eating."
     "He whispers this to me while giving me an annoyed glare."
@@ -115,100 +122,100 @@ label ch1_main:
     s 1o "..."
     s 1l "What?"
     "My mouth is overflowing with donut."
-    show satori 1y
+    show satori 1y at t11
     "Satori visibly tries to suppress the grin creeping across his face."
     "We both break at the same time and start giggling."
-    show satori 1s
+    show satori 1s at t11
     "I struggle to keep the cream from shooting out of my nose."
     "I swiftly grab a tissue from the teacher's desk to wipe the crumbs and cream from my mouth."
     mc "Don't make me laugh when my mouth is full, Satori!"
     mc "You almost made me choke!"
     s 4x "Hey, it's not my fault!"
-    s 4aq "No one told you to shove that donut in your face like a python swallowing a rabbit."
+    s 4aq "No one told you to shove that donut in your face like a python swallowing a rabbit."  
     "We both start giggling again."
     show satori 4s
     "It's not uncommon for us to crack each other up like this daily."
-    show satori at t32
-    show yuuri 1a at t33
+    show yuuri 1a at t21
+    show satori at t22
     "Yuuri approaches with the tea set and hands me a steaming cup."
-    show satori at t21
-    show yuuri at f22
+    show yuuri at f21
     y 1c "You two are such fun to watch."
     y "You really are good friends, aren't you?"
     y 1j "I might be a little jealous."
-    show yuuri at t22
-    show satori at f21
+    show yuuri at t21
+    show satori at f22
     s 7a "No need to be jealous, Yuuri."
     s 7z "She could be good friends with you too."
     s 7x "I can see you two getting along really well!"
-    s 7r "Yuuri even got something for you, [player]!"
-    show satori at t21
-    show yuuri at f22
-    y 7p "Wait! Satori!"
-    show yuuri at t22
+    s 7r "Yuuri even got something for you, [player]!" 
+    show yuuri at f21
+    show satori at t22
+    y 7p "Wait! Satori!" 
     mc "For me?"
-    show yuuri at f22
+    show yuuri at t21
+    show satori at t22
     y 7o "It's nothing, really..."
-    show yuuri at t22
-    show satori at f21
+    show yuuri at t21
+    show satori at t22
     s 1ar "C'mon, Yuuri. Don't be shy."
-    show satori at t21
     mc "What is it?"
-    show yuuri at f22
+    show yuuri at f21
+    show satori at t22
     y 6o "Nevermind."
-    y 6p "Satori made it sound like a big deal when it really isn't..."
-    show yuuri at t22
+    y 6p "Satori made it sound like a big deal when it really isn't..." 
     "I subtly gesture with my head for Satori to bugger off."
     show satori 1a
     "He nods and heads back to his desk."
-    hide satori
     show yuuri at t11
+    show satori at thide
+    hide satori
     "It's time for me to save the situation."
     mc "Yuuri, don't worry about it."
     mc "Any nice gesture from you is a pleasant surprise."
     mc "It'll make me happy no matter what."
     y 6q "Is...that so?"
     mc "Of course."
-    mc "I won't make it a big deal if you don't want it to be."
+    mc "I won't make it a big deal if you don't want it to be." 
     y "Well, alright."
     y 6s "Here you go."
-    "Relieved, Yuuri reaches into his bag and pulls out a book."
-    "Jeez, that's a thick book."
-    y 1u "I didn't want you to feel left out, so I picked up a book I thought you might enjoy."
-    "That thing's like...1000 pages."
+    "Relieved, Yuuri reaches into his bag and pulls out a book." 
+    "Jeez, that's a thick book." 
+    y 1u "I didn't want you to feel left out, so I picked up a book I thought you might enjoy." 
+    "That thing's like...1000 pages." 
     "He doesn't expect me to actually read the whole thing, does he?"
-    y 1b "It's a short read, so it should keep your attention."
-    "Short read?"
-    "Is he serious right now?"
-    "It looks like Stephen King wrote that tome."
-    "Looking at the cover barely keeps my attention."
-    y 1j "I was hoping after you finished it..."
-    y 1i "We could..."
-    y" You know..."
+    y 1b "It's a short read, so it should keep your attention." 
+    "Short read?" 
+    "Is he serious right now?" 
+    "It looks like Stephen King wrote that tome." 
+    "Looking at the cover barely keeps my attention." 
+    y 1j "I was hoping after you finished it..." 
+    y 1i "We could..." 
+    y" You know..." 
     y 1s "Discuss it..."
     y "If you wanted."
-    "Yuuri smiles bashfully."
-    "I sigh."
-    "As if he wasn't already unbelievably cute enough."
-    "I can't believe he brought me a book he thought I'd enjoy despite me not reading much."
+    "Yuuri smiles bashfully." 
+    "I sigh." 
+    "As if he wasn't already unbelievably cute enough." 
+    "I can't believe he brought me a book he thought I'd enjoy despite me not reading much." 
     "What a gentleman. I suppose reading it is the least I could do."
-    mc "This was super nice of you, Yuuri! Thank you!"
+    mc "This was super nice of you, Yuuri! Thank you!" 
     show yuuri 1c
-    mc "I'll definitely read this!"
-    "I enthusiastically take the book."
-    "Holy cow, this thing weighs, like, 8 pounds."
-    "I flip through the pages."
-    "Oh boy, size 6 font."
+    mc "I'll definitely read this!" 
+    "I enthusiastically take the book." 
+    "Holy cow, this thing weighs, like, 8 pounds." 
+    "I flip through the pages." 
+    "Oh boy, size 6 font." 
     "My favorite..."
-    "I slip the book into my bag."
-    y 1j "Well, you can read it at your own pace."
+    "I slip the book into my bag." 
+    y 1j "Well, you can read it at your own pace." 
     y 1y "I look forward to hearing what you think."
-    hide yuuri
-    "Now that everyone is settled in, I expect Mateo to kick off some scheduled activities for the club."
-    "But that doesn't seem to be the case."
-    "Satori and Mateo are having a quiet conversation in the corner."
-    "Yuuri's face is already buried in a book."
-    "I can't help but notice his intense expression, like he was waiting for this chance."
+    show yuuri at thide
+    hide yuuri 
+    "Now that everyone is settled in, I expect Mateo to kick off some scheduled activities for the club." 
+    "But that doesn't seem to be the case." 
+    "Satori and Mateo are having a quiet conversation in the corner." 
+    "Yuuri's face is already buried in a book." 
+    "I can't help but notice his intense expression, like he was waiting for this chance." 
     "Meanwhile, Natsuko is rummaging around in the closet."
 
     $ nextscene = poemwinner[0] + "_exclusive_" + str(eval(poemwinner[0][0] + "_appeal"))
@@ -236,7 +243,7 @@ label ch1_main:
     "Satori's is on a wrinkled piece of loose leaf torn from a spiral notebook."
     "Meanwhile, Mateo has written his in a composition notebook."
     "I can already see Mateo's pristine handwriting from where I sit."
-    "Of course he has perfect handwriting."
+    "Of {i}course{/i} he has perfect handwriting."
     "Natsuko and Yuuri reluctantly comply as well, reaching into their bags."
     "I do the same myself."
     return
@@ -245,7 +252,7 @@ label ch1_main:
 label ch1_end:
     scene bg club_day
     with wipeleft_scene
-    play music ohayou_satori
+    play music t3
     "Phew."
     "I guess that's everyone."
     "I glance around the room."
@@ -318,7 +325,7 @@ label ch1_end:
     n 1y "Oh? I didn't realize you were so invested in impressing our new member, Yuuri!"
     show natsuko at t22
     show yuuri at f21
-    play music poem_panic
+    play music t7
     y 7n "---!  I-I..."
     "Yuuri suddenly stands up."
     "Oh boy, things are gettin' real..."
@@ -674,12 +681,14 @@ label ch1_end_natsuki:
     n 7r "I mean...I don't know exactly if it's true or not..."
     n 7w "But I'm sorry I said it."
     hide natsuko
-    show yuuri 6g
+    show yuuri 6g at t11
     "That said, Natsuko crosses his arms and looks away stubbornly."
     "I sigh."
     "Well, that apology could have been more sincere."
-    show satori 1q at f22
+    show yuuri at t21
+    show satori 1q at t32
     "Satori playfully nudges Yuuri."
+    show satori at f22
     s 7x "Hey, I have P.E. with Yuuri."
     s 7z "Trust me, every inch he's packing is 100% natural!"
     show satori at t22
