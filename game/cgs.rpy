@@ -208,7 +208,7 @@ image n_cg3_exp1:
 image n_cg3_exp2:
     "images/cg/n_cg3_exp2.png"
 
-# Yuuri Readtime CG (BETA Testing)
+# Yuuri Readtime CG
 
 # Base Image with Yuri and Classroom
 image y_cg1_base:
