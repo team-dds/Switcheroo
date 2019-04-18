@@ -6,7 +6,7 @@ label yuri_exclusive_1:
     "I catch a glimpse of the cover of his book."
     "It looks like the same book he gave to me."
     "More than that, he seems to be on the first few pages."
-    play music play_with_me fadeout 1.0
+    play music t6 fadeout 1.0
     show yuuri 1f at t11
     y "Ah..."
     "Crap."
@@ -171,8 +171,6 @@ label yuri_exclusive_1:
     "I glance over at Yuuri and our eyes meet."
     "There's no way I'll be able to keep up with him."
     "I'm not exactly a speed-reader."
-    hide y_cg1_exp2
-    show y_cg1_exp2 at cgfade
     y "Ah, that's okay."
     y "I'm sure the small font isn't helping much."
     y "So I don't mind being patient if it takes you a bit longer."
