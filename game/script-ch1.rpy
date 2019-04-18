@@ -406,6 +406,7 @@ label ch1_end:
             call ch1_end_sayori
 
     scene bg club_day
+    with wipeleft_scene
     show mateo 4b at t32
     m "Alright, guys."
     m "It's just about time for us to leave."
@@ -421,8 +422,13 @@ label ch1_end:
     show satori at t43
     show mateo at t44
     n "It was alright. Well, mostly."
+    show yuuri at thide
     show natsuko at thide
+    show satori at thide
+    hide yuuri
     hide natsuko
+    hide satori
+    show mateo at t11
     m 6b "[player], how about you?"
     mc "Well, it started off slow..."
     mc "But then it got interesting."

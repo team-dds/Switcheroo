@@ -717,7 +717,8 @@ label ch1_n_bad:
     n 1k "I'd point out what you need to work on, but you're better off just trying again from scratch."
     mc "Fair enough."
     mc "To each their own, I guess."
-    "I can see why Yuuri said Natsuko might be biased."
+    if yuuri_readearly == True:
+        "I can see why Yuuri said Natsuko might be biased."
     n 5w "Anyway...I guess I better show you my poem now."
     n 7y "I know you're gonna really like it, but try to contain yourself."
     return
@@ -1790,6 +1791,7 @@ label ch1_y_bad:
         "He's actually really handsome when he smiles."
         "He seems so serious all the time."
         "I doubt he's this happy about anything very often."
+        $ yuuri_readearly = True
         return
 
 label ch1_y_med:
