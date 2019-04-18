@@ -412,13 +412,14 @@ label ch1_end:
     m 61 "How did you all feel about sharing poems?"
     show satori 4z at t31
     s "I had fun!"
-    show satori at thide
-    hide satori
     show yuuri 1j at t31
+    show satori at t32
+    show mateo at t33
     y "I'd say it was worth it."
-    show yuuri at thide
-    hide yuuri
-    show natsuko 1c at t31
+    show natsuko 1c at t41
+    show yuuri at t42
+    show satori at t43
+    show mateo at t44
     n "It was alright. Well, mostly."
     show natsuko at thide
     hide natsuko
@@ -861,7 +862,7 @@ label ch1_end_sayori:
     s 1d "Gosh, [player]..."
     show satori at t32
     "I stand triumphantly."
-    show mateo at t41
+    show mateo 1d at t41
     show yuuri at t42
     show natsuko at t44
     show satori at t43
