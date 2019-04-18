@@ -147,10 +147,10 @@ label sayori_exclusive_1:
     s "Ugh...it's not worth it at all."
     "Satori hastily unbuttons his blazer once more, along with his shirt collar."
     "He also loosens his tie and frees it from beneath his sweater vest."
-    
+
     scene bg club_day
     with dissolve_cg
-    show satori 5z at t11 
+    show satori 5z at t11
     s "Ah...much better!"
     "Having disheveled himself once again, Satori stretches in relief."
     s 1j "You have some nerve to talk about {i}my{/i} wardrobe."
@@ -193,8 +193,8 @@ label sayori_exclusive_1:
     mc "Deal."
     s 10y "I guess we really are better at taking care of each other than ourselves, huh?"
     mc "Yeah. I think it's always been that way."
-    show satori at t21
-    show mateo 6k at t22
+    show satori at t21 zorder 3
+    show mateo 6k at t22 zorder 2
     m "Alright, guys!"
     "Mateo suddenly calls out."
     m 6b "Why don't we share our poems now?"
