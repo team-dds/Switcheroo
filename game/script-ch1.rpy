@@ -285,8 +285,10 @@ label ch1_end:
     y 1j "Ah, thanks. Yours is...cute."
     show yuuri at t21
     show natsuko at f22
+    stop music fadeout 0.5
     n 6f "Cute?!"
     "Oh, snap. Shorty's triggered."
+    play music t7
     n 5e "Did you completely miss the symbolism or something?!"
     n 5x "It's clearly about the feeling of giving up!"
     n 7e "How can that be cute?!"
@@ -411,12 +413,15 @@ label ch1_end:
     m 61 "How did you all feel about sharing poems?"
     show satori 4z at t31
     s "I had fun!"
+    show satori at thide
     hide satori
     show yuuri 1j at t31
     y "I'd say it was worth it."
+    show yuuri at thide
     hide yuuri
     show natsuko 1c at t31
     n "It was alright. Well, mostly."
+    show natsuko at thide
     hide natsuko
     m 6b "[player], how about you?"
     mc "Well, it started off slow..."
@@ -425,6 +430,7 @@ label ch1_end:
     m 1k "In that case, we'll do the same thing tomorrow."
     m 3b "And maybe you learned something from everyone today, too."
     m 1w "I expect to see a significant improvement from you tomorrow."
+    show mateo at thide
     hide mateo
     "I did learn a lot from everyone here today."
     "Enough, at least, to impress who I want to impress."
@@ -440,8 +446,8 @@ label ch1_end:
     scene bg residential_day
     with wipeleft_scene
 
-    mc "Hey, Satori..."
     show satori 1b at t11
+    mc "Hey, Satori..."
     s "Yeah?"
     mc "About what happened earlier...that fight between Natsu and Yuuri."
     mc "Does that happen often?"
@@ -481,42 +487,45 @@ label ch1_end_yuri:
     show natsuko 7y
     n "See??"
     play music t8
+    show natsuko at t22
     mc "Hold on!"
     mc "That's no excuse for you to be so mean!"
     mc "Why pick a fight with someone just because their opinion is different from yours?"
+    show natsuko at f22
     n 6e "That's his fault!"
     n 5f "He wouldn't even take my poem seriously!"
     "Ugh."
     "Why do I have to be the one to handle this?"
     "I look around for support, but Satori and Mateo are just standing there staring at me."
     "Clearly, they're not going to be of any help."
+    show natsuko at t22
     mc "{i}Sigh.{/i} Alright..."
-    show natsuko at t21
     "I turn to Yuuri."
     mc "Yuuri."
     mc "You're a seriously talented writer."
-    show yuuri 1i
+    show yuuri 1i at t21
     mc "It's no secret that I was impressed by your poem too."
     mc "But here's the thing..."
     mc "No matter how simple or refined someone's writing style is..."
     mc "They're still putting feelings into it and it becomes something really personal."
     mc "That's why Natsu felt provoked when you said his poem was cute."
-    show natsuko at t21
-    show yuuri at f22
+    show natsuko at t22
+    show yuuri at f21
     y 6v "I...I see."
     y 6w "I didn't realize. I'm sorry."
+    show yuuri at t21
     mc "And Natsu..."
     mc "Next time, keep the critique helpful and literature-related."
     mc "No need for the personal insults."
-    show natsuko at f21
-    show yuuri at t22
+    show natsuko at f22
+    show yuuri at t21
     n 6p "...!"
     n "Are you kidding me!"
     n 6r "He's the one who threw the first insult!"
     "Natsuko does have a point there."
     "I glance over at Yuuri."
-    show natsuko at t21
-    show yuuri at f22
+    show natsuko at t22
+    show yuuri at f21
     y 7v "I did, didn't I?"
     y 6t "I'm so sorry for that, Natsuko."
     y 6w "Please forgive me."
@@ -524,8 +533,8 @@ label ch1_end_yuri:
     mc "Yuuri apologized."
     mc "Don't you think you should too, Natsu?"
     "Natsuko growls and clenches his fists."
-    show natsuko at f21
-    show yuuri at t22
+    show natsuko at f22
+    show yuuri at t21
     n 7x "Alright, fine."
     n 7w "I'm sorry, okay?"
     show natsuko at thide
@@ -634,11 +643,15 @@ label ch1_end_yuri:
     "My stomach knots up."
     "Ugh... why does he have to be so dashing?"
     mc "It... it's fine..."
+    show mateo at thide
+    hide mateo
     return
 
 label ch1_end_natsuki:
     $ ch1_choice = "natsuki"
     stop music fadeout 1.0
+    show natsuko at t22
+    show yuuri at t21
     mc "Um...Yuuri..."
     show yuuri 1v
     mc "You're insanely talented."
@@ -647,10 +660,10 @@ label ch1_end_natsuki:
     mc "I think conveying feelings with a few words can be just as impressive."
     mc "It lets the reader's imagination take over."
     mc "And Natsu's poem did a really good job at that."
-    show natsuko 7y
+    show natsuko 7y at f22
     "Natsuko beams proudly."
     mc "And Natsu..."
-    show natsuko 7k
+    show natsuko at t22
     mc "What all of us talked about yesterday..."
     mc "It's true."
     mc "Writing is a really personal thing and sharing it can be hard."
@@ -680,12 +693,15 @@ label ch1_end_natsuki:
     n 5h "Well...I'm sorry."
     n 7r "I mean...I don't know exactly if it's true or not..."
     n 7w "But I'm sorry I said it."
+    show natsuko at thide
     hide natsuko
     show yuuri 6g at t11
     "That said, Natsuko crosses his arms and looks away stubbornly."
     "I sigh."
     "Well, that apology could have been more sincere."
     show yuuri at t21
+    show satori 1q at t22
+    pause 0.1
     show satori 1q at t32
     "Satori playfully nudges Yuuri."
     show satori at f22
@@ -701,10 +717,9 @@ label ch1_end_natsuki:
     y 6q "I'll...I'll go make some tea."
     hide yuuri left swipe
     "Yuuri hurries off."
+    show satori at t11
     "Satori smiles proudly at me."
-    show satori at f22
     s 1q "I helped."
-    show satori at t22
     "My glare meets his dumb grin."
     mc "THAT'S where you decide to jump in?"
     show satori 1e
@@ -712,10 +727,9 @@ label ch1_end_natsuki:
     mc "You just stood there smiling like an idiot while I broke up the fight!"
     mc "What the hell kinda Vice President are you?!"
     "Realizing his mistake, Satori blushes and looks away embarassingly."
-    show satori at f22
     s 1k"I...I'm sorry...I didn't think..."
-    show satori at t22
     mc "And {i}you{/i}!"
+    show satori at t22
     show mateo 1d at t21
     "I turn towards Mateo, who's standing off to the side, watching."
     mc "Where were you during that little fiasco?"
@@ -733,11 +747,11 @@ label ch1_end_natsuki:
     show satori at t22
     "Both of them look dejectedly at the ground."
     "I sigh."
-    mc "Tell you what..."
-    mc "If I have to learn to be a poet, then you two need to learn to be better leaders."
+    mc "Tell you what—if I have to learn to be a poet, then you two need to learn to be better leaders."
     mc "Deal?"
     show satori at f22
     s 1d "You got a deal, [player]!"
+    show satori at thide
     hide satori
     "I look at Mateo skeptically."
     mc "What about you?"
@@ -749,7 +763,9 @@ label ch1_end_natsuki:
     "Mateo smiles at me."
     "My stomach knots up."
     "Ugh... why does he have to be so dashing?"
-    mc "It... it's fine..."
+    mc "It—it's fine..."
+    show mateo at thide
+    hide mateo
     return
 
 label ch1_end_sayori:
@@ -762,7 +778,9 @@ label ch1_end_sayori:
     "I look around and see Satori sitting at his chair, flipping through his notebook, seemingly oblivious to everything."
     "I run over and grab him by the arm, dragging him towards the others."
     mc "Satori!"
-    show satori 1n at t41
+    show yuuri at t31
+    show natsuko at t33
+    show satori 1n at f32
     stop music fadeout 1.0
     s "Eh?"
     mc "That's right!"
@@ -771,33 +789,56 @@ label ch1_end_sayori:
     "Satori plucks out the ear-buds attached to his phone."
     s 1b "Hmm? People are fighting?"
     "I sigh, fixating my annoyed glare on his clueless face."
+    show yuuri at t21
+    show natsuko at f22
+    show satori at thide
     hide satori
     n 7w "Oh, he doesn't even care!"
     n 5e "Besides, this isn't about him!"
+    show yuuri at f21
+    show natsuko at t22
     y 6r "I agree. It's unfair for others to interject their feelings into our conflict."
+    show yuuri at t21
+    show natsuko at t22
     "Oh, but {i}I'm{/i} expected to interject my feelings into their conflict..."
+    show yuuri at t21
+    show natsuko at f22
     n 7w "Yeah! Unless Satori wants to tell Yuuri what a stuck up jerk he's being!"
     play music t7
+    show yuuri at f21
+    show natsuko at t22
     y 6h "He would never!"
     y 6r "It's your immaturity that's made everyone so upset in the first place!"
+    show yuuri at t21
+    show natsuko at f22
     n 6f "Excuse me?"
     n "Are you listening to yourself right now?"
-    n 5b "This is exactly why nobody likes--..."
+    n 5b "This is exactly why nobody likes—{nw}"
     stop music
+    show yuuri 6t at t31
+    show natsuko 1c at t33
+    show satori  at t32
+    show bg club_day with vpunch
     mc "Alright, KNOCK IT OFF!"
-    show natsuko 1c
-    show yuuri 6t
-    ny "...!"
+    show yuuri at f31
+    show natsuko at f33
+    y and n "...!"
+    show yuuri at t31
+    show natsuko at t33
     "I surprise everyone with my outburst, including myself."
     play music t8
-    mc "Yuuri, Natsuko."
+    mc "Yuuri, Natsuko..."
     mc "You guys are friends."
     mc "And over time, I hope you'll think of me as your friend, too."
     mc "Because that's what I want."
     mc "I want us all to get along and be happy."
     mc "You guys must be wonderful people or else Satori wouldn't think so highly of you."
     mc "And I respect his opinion more than anything."
-    s 10y "[player]..."
+    show natsuko at t33
+    show yuuri at t31
+    show satori 10y at f32
+    s "[player]..."
+    show satori at t32
     mc "You guys are awesome because of your differences."
     mc "Natsu's poem was amazing because it gave me so many feelings with just a few words."
     mc "And Yuuri's poem was amazing because it painted such a beautiful picture in my head."
@@ -812,24 +853,43 @@ label ch1_end_sayori:
     mc "I'm sure whatever you're packing is 100 percent natural, and you should be very proud!"
     show yuuri 7v
     "Nailed it."
+    show yuuri at f31
+    show natsuko at f33
     y and n "..."
+    show yuuri at t31
+    show natsuko at t33
+    show satori at f32
     s 1d "Gosh, [player]..."
-    hide satori
+    show satori at t32
     "I stand triumphantly."
+    show mateo at t41
+    show yuuri at t42
+    show natsuko at t44
+    show satori at t43
     "I spot Mateo standing behind everyone else, wearing a curious expression."
+    show mateo at thide
+    hide mateo
     y 6q "I'll... I'll make some tea."
+    show natsuko at t22
+    show satori at t21
     show yuuri at lhide
     hide yuuri
     "Yuuri hurries away."
+    show natsuko at thide
     hide natusko
-    "Natsuko sits down with a blank expression, staring at nothing."
+    show satori at t11
+    "Natsuko sits down with a blank expression, staring into the air."
     show satori 10r at t11
     s "I'm starting to think you should be the Vice President instead of me!"
     mc "Hey, if I'm going to usurp any position of power, I'm going for the title of head honcho."
     show mateo 6i at t21
     show satori 1b at t22
     "I say this in front of Mateo, who stares at me in surprise."
+    show mateo at f21
+    show satori at t22
     m "I beg your pardon?"
+    show mateo at t21
+    show satori at t22
     mc "You heard me."
     mc "There was just a huge conflict in the club and neither you nor Satori put any effort into stopping it."
     mc "You guys are supposed to be the leaders."
@@ -840,14 +900,23 @@ label ch1_end_sayori:
     "Mateo glares at me for a moment."
     show mateo 6p
     "Then to my surprise, he averts his gaze and drops the scowl."
+    show mateo at f21
+    show satori at t22
     m "I... I suppose you might have a point."
     m "Perhaps I should have interjected..."
+    show mateo at t21
+    show satori at f22
     s 1e "I-I'm sorry..."
     s "I should have been paying attention."
+    show mateo at t21
+    show satori at t22
     mc "Tell you what..."
     mc "If I have to learn to be a poet, then you two need to learn to be better leaders."
     mc "Deal?"
+    show mateo at t21
+    show satori at f22
     s 1d "You got a deal, [player]!"
+    show satori at thide
     hide satori
     show mateo at t11
     "I look at Mateo skeptically."
@@ -859,4 +928,6 @@ label ch1_end_sayori:
     "My stomach knots up."
     "Ugh... why does he have to be so dashing?"
     mc "It... it's fine..."
+    show mateo at lhide
+    hide mateo
     return
