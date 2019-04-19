@@ -712,7 +712,7 @@ label ch1_end_natsuki:
     "Satori playfully nudges Yuuri."
     show satori at f22
     s 7x "Hey, I have P.E. with Yuuri."
-    s 7z "Trust me, every inch he's packing is 100% natural!"
+    s 7z "Trust me, every inch he's packing is 100 percent natural!"
     show satori at t22
     show yuuri 6o
     "My gaze instantly shifts back to Yuuri's crotch."
