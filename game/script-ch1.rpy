@@ -473,8 +473,11 @@ label ch1_end:
     mc "I am having fun. Thanks for helping me out with that."
     s 1r "Of course!"
     s 1z "Tomorrow's gonna be even better!"
-    if poemwinner[0] == "natsuko":
+    if poemwinner[0] == "natsuki":
         s 3x "And remember...if you like Nat, stick with simple, whimsical poems."
+        s 1q "That'll really make him happy."
+    elif poemwinner[0] == "yuri":
+        s 3x "And remember... if you like Yuuri, you might want to consider writing poetry with big, expressive words or dark themes."
         s 1q "That'll really make him happy."
     else:
         s 3x "And remember...if you like either Yuuri or Natsu, you might want to consider reading with one of them."
