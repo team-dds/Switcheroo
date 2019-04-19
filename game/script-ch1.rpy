@@ -66,11 +66,10 @@ label ch1_main:
     s 1aa "You need to wash your hair."
     "He gives my ponytail a gentle tug."
     mc "Hey!"
-    show satori 1ac at t22
+    show satori 1b at t22
     show natsuko 1z at f21
     "Natsuko sets the tray on the desk in front of me and dramatically peels back the tin foil."
     n "Ta-da!"
-    show satori 1b
     mc "Whoa!"
     "I stare in awe as he reveals a dozen fresh cream-filled donuts."
     "The words Literature Club are written in chocolate icing on each donut."
@@ -220,7 +219,7 @@ label ch1_main:
     $ nextscene = poemwinner[0] + "_exclusive_" + str(eval(poemwinner[0][0] + "_appeal"))
     call expression nextscene
 
-    show mateo 1 zorder 2 at t21
+    show mateo 1 zorder 2 at t11
     m "By the way, [player], did you remember to write a poem last night?"
     mc "Y-Yeah."
     "My relaxation ends."
@@ -284,10 +283,8 @@ label ch1_end:
     y 1j "Ah, thanks. Yours is...cute."
     show yuuri at t21
     show natsuko at f22
-    stop music fadeout 0.5
     n 6f "Cute?!"
     "Oh, snap. Shorty's triggered."
-    play music t7
     n 5e "Did you completely miss the symbolism or something?!"
     n 5x "It's clearly about the feeling of giving up!"
     n 7e "How can that be cute?!"
@@ -410,7 +407,7 @@ label ch1_end:
     show mateo 4b at t32
     m "Alright, guys."
     m "It's just about time for us to leave."
-    m 61 "How did you all feel about sharing poems?"
+    m 6i "How did you all feel about sharing poems?" #6i for now till Roach Verification
     show satori 4z at t31
     s "I had fun!"
     show yuuri 1j at t31
@@ -882,7 +879,7 @@ label ch1_end_sayori:
     hide yuuri
     "Yuuri hurries away."
     show natsuko at thide
-    hide natusko
+    hide natsuko
     show satori at t11
     "Natsuko sits down with a blank expression, staring into the air."
     show satori 10r at t11
