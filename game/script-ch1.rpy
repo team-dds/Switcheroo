@@ -473,8 +473,12 @@ label ch1_end:
     mc "I am having fun. Thanks for helping me out with that."
     s 1r "Of course!"
     s 1z "Tomorrow's gonna be even better!"
-    s 3x "And remember...if you like Nat, stick with simple, whimsical poems."
-    s 1q "That'll really make him happy."
+    if poemwinner[0] == "natsuko":
+        s 3x "And remember...if you like Nat, stick with simple, whimsical poems."
+        s 1q "That'll really make him happy."
+    else:
+        s 3x "And remember...if you like either Yuuri or Natsu, you might want to consider reading with one of them."
+        s 1q "That'll really make them happy."
     "I smile."
     "It's so wonderful having Satori support my little scheme here."
     mc "Thanks for the advice. Let's see what tomorrow holds."
