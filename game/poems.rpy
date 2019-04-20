@@ -985,5 +985,5 @@ label showpoem(poem=None, music=True, track=None, revert_music=True, img=None, w
         $ currentpos = get_pos(channel="music_poem")
         $ audio.t5c = "<from " + str(currentpos) + " loop 4.444>bgm/5.ogg"
         stop music_poem fadeout 2.0
-        $ renpy.music.play(audio.t5c, fadein=2.0)
+        $ renpy.music.play(audio.t5, fadein=2.0)
     return
