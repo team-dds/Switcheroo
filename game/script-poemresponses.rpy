@@ -1,3 +1,5 @@
+define yuuri_readearly = None
+
 label poemresponse_start:
     $ poemsread = 0
     $ skip_transition = False
@@ -1818,8 +1820,41 @@ label ch1_y_good:
     y 6g "Interesting..."
     "Yuuri traces the words of my poem with his finger, as if breaking it down more thoroughly."
     y 6h "The thing is..."
-    jump ch1_y_shared
-
+    y 4f "There are specific writing habits that are usually typical of new writers."
+    y 4h "Having been through that myself, I've learned how to pick up on them."
+    y 3k "See, new writers try to make their style more deliberate..."
+    y 3h "Often picking a subject matter different from the style and then just form-fitting them together."
+    y 1k "The end result is that both the style and the expressiveness are weakened."
+    "Once Yuuri finds his train of thought, his demeanor does a complete 180."
+    "His stammering disappears and he sounds more like a teacher than a student."
+    y 1f "Now this is not something you can be blamed for, of course."
+    y 3f "There are many techniques that can go into writing even a simple poem."
+    y 3k "Not just finding them and building them..."
+    y "But getting them to work together is probably the most challenging part."
+    y 3m "All of this comes with practice, learning from example and trying new things."
+    y 3b "That's why I thought you were experienced." 
+    y 3d "Because I see none of these mistakes in your poem."
+    mc "Haha! Probably just beginner's luck!" 
+    mc "Please don't be disappointed if tomorrow's doesn't come out as good."
+    y 1a "It's okay." 
+    y 1b "You're new, so I expect you to try to new things." 
+    y 4m "Receiving valuable feedback from everyone else will influence you as well." 
+    y 6h "Natsuko can be a bit biased though."
+    mc "Biased? How?"
+    y 6o "Ah..." 
+    y 6g "Well..."
+    y 4j "I suppose you'll see what I mean, eventually."
+    mc "Alright..."
+    "That was weird."
+    "I wonder what he has against Natsuko?"
+    mc "So how about I check out your poem now?" 
+    y 1c "Yes, of course!"
+    y 1d "I would love to share my thought process behind it."
+    "Yuuri smiles dreamily as he hands me his poem."
+    "He's actually really handsome when he smiles."
+    "He seems so serious all the time."
+    "I doubt he's this happy about anything very often."
+    return
 
 label ch2_y_bad:
     #Dislikes both poems

@@ -1,3 +1,4 @@
+
 label ch1_main:
     scene bg club_day
     with dissolve_scene_half
@@ -19,39 +20,44 @@ label ch1_main:
     "There's definitely food in here."
     "I'm positive I smell confectioners sugar."
     "Where is it coming from?"
-    show yuuri t22
+    show yuuri at t22
     show natsuko 7y at f21
     n "Don't feel too sorry for her, Yuuri."
     n 7ah "Satori told me this naughty girl didn't even want to join any clubs this year."
     n "Last year too."
     n 3y "I sure hope you intend on taking us seriously, Missy, or you won't see the end of it!"
     "Aha! Shorty's got the sugar."
+    show yurri at thide
+    hide yuuri
+    show natsuki at t11
     "I approach him and sniff the air around him."
-    show natsuko 5h at t21
+    show natsuko 5h
     mc "You smell like cupcakes or something."
     mc "Do you have food?"
-    show natsuko at t32
-    show yuuri at t33
-    show satori 3z at f31
+    show natsuko at t33
+    #show yuuri at t33
+    show satori 3z at f32
     s "Ha! Told you she'd smell it as soon as she walks in!"
     s "She's got a nose like a bloodhound when it comes to food!"
     "Satori playfully leans on me, his arm draped over my shoulder."
-    show natsuko at f32
-    show satori at t31
+    show natsuko at f33
+    show satori at t32
     n 7q "Aw, man. I wanted it to be a surprise!"
     "Natsuko pouts."
     mc "Trust me, I'm surprised."
     mc "Also, super hungry."
-    show natsuko at t32
-    show satori at f31
+    show natsuko at t33
+    show satori at f32
     s 7q "I better get the tray before she devours us all."
-    show natsuko at f32
-    show satori at t31
+    show natsuko at f33
+    show satori at t32
     n 6e "Hey, I brought them! I'll get them!"
     show natsuko zorder 1 at thide
     hide natsuko
     "Natsuko heads to the back of the classroom and retrieves a tray covered with tin foil."
+    show yuuri 1b at f31
     y 1b "And while we're at it, I'll make some tea as well."
+    show yuuri at t31
     show yuuri zorder 1 at thide
     hide yuuri
     pause 1.0
@@ -220,6 +226,9 @@ label ch1_main:
     call expression nextscene
 
     show mateo 1 zorder 2 at t11
+    hide satori
+    hide natsuko
+    hide yuuri
     m "By the way, [player], did you remember to write a poem last night?"
     mc "Y-Yeah."
     "My relaxation ends."

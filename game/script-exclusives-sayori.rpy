@@ -201,7 +201,7 @@ label sayori_exclusive_1:
     s 5z "Sweet! I can't wait to read yours, [player]!"
     mc "Yeah...likewise..."
     "I fail to sound enthusiastic as Satori jogs to his desk to retrieve his poem."
-    show satori at thide
+    show satori behind mateo at thide
     return
 
 label sayori_exclusive_2:
