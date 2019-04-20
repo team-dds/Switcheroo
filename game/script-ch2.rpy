@@ -1,8 +1,10 @@
 
 label ch2_main:
+    stop music fadeout 2.0
     scene black
     with dissolve_scene_full
-    mc 1b "Hey, [player]! I hope you had fun playing the Beta demo!" 
+    show femc 1b at t11 zorder 2
+    mc "Hey, [player]! I hope you had fun playing the Beta demo!" 
     mc 3c "This might be the final demo before the full release, which we hope will be by the end of the year."
     mc 3j "So you'll have plenty of time to get to know the brokis before then." 
     mc "Go back, if you haven't already, and write a poem for each of the boys."
