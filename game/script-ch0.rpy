@@ -774,7 +774,7 @@ label ch0_main:
     s 1r "Anyway... You can take it from there."
     s "You don't need my help that much anyway."
     s 10y "You're already beautiful and funny."
-    s 10ar "Just tell me who you like and I'll help you get him."
+    s 10aq "Just tell me who you like and I'll help you get him."
     mc "...I mean...not that I'm interested in him...but what will impress Mateo?"
     show satori 1b at t11 zorder 2
     "Satori thinks to himself for a moment."

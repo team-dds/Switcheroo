@@ -135,7 +135,7 @@ label ch1_main:
     mc "Don't make me laugh when my mouth is full, Satori!"
     mc "You almost made me choke!"
     s 4x "Hey, it's not my fault!"
-    s 4aq "No one told you to shove that donut in your face like a python swallowing a rabbit."
+    s 4p "No one told you to shove that donut in your face like a python swallowing a rabbit."
     "We both start giggling again."
     show satori 4s
     "It's not uncommon for us to crack each other up like this daily."

@@ -1316,7 +1316,7 @@ label ch1_s_bad:
     s 1x "Anyway-- wanna read my poem now?"
     s 10l "I'm, umm... not very good at this."
     mc "I'll be the judge of that."
-        return
+    return
 
 label ch1_s_med:
     show satori 1a at t11 zorder 2
