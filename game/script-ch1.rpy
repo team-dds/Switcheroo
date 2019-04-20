@@ -27,7 +27,7 @@ label ch1_main:
     n "Last year too."
     n 3y "I sure hope you intend on taking us seriously, Missy, or you won't see the end of it!"
     "Aha! Shorty's got the sugar."
-    show yurri at thide
+    show yuuri at thide
     hide yuuri
     show natsuki at t11
     "I approach him and sniff the air around him."

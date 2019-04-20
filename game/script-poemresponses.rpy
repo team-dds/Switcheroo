@@ -1,5 +1,3 @@
-define yuuri_readearly = None
-
 label poemresponse_start:
     $ poemsread = 0
     $ skip_transition = False
@@ -719,7 +717,7 @@ label ch1_n_bad:
     n 1k "I'd point out what you need to work on, but you're better off just trying again from scratch."
     mc "Fair enough."
     mc "To each their own, I guess."
-    if yuuri_readearly == True:
+    if y_readpoem == True:
         "I can see why Yuuri said Natsuko might be biased."
     n 5w "Anyway...I guess I better show you my poem now."
     n 7y "I know you're gonna really like it, but try to contain yourself."
@@ -1296,27 +1294,28 @@ label ch1_s_bad:
     mc "...!"
     mc "What the actual hell, man?!"
     mc "I mean...I love you too...but damn..."
-    label ch1_s_shared:
-        s 10r "Ahahaha! I'm just happy that you actually wrote one."
-        s 1d "It shows that you're taking this seriously."
-        mc "Of course."
-        mc "I may not be totally into it yet, but I'm still gonna put in some effort."
-        s 1q "Well it definitely shows."
-        s 1d "You didn't have to do this, you know."
-        s 1l "I mean...we both know why you decided to join."
-        s 7x "But it seems like you're really putting effort into writing..."
-        s 7d "And I appreciate that."
-        "It's true that I initially joined this club in the hopes of getting to know the others."
-        "But, I'd be lying if I said Satori had nothing to do with it."
-        "This club does mean a lot to him after all."
-        s 1d "And don't worry."
-        s 1y "I'll keep my word to help you impress whoever you're interested in."
-        s 1d "It'll be my way of thanking you."
-        mc "I'm gonna hold you to that."
-        s 1z "Haha, deal!"
-        s 1x "Anyway-- wanna read my poem now?"
-        s 10l "I'm, umm... not very good at this."
-        mc "I'll be the judge of that."
+    s 1r "Haha! It's fine, it's fine." 
+    s 7x "It's your first time after all." 
+    s 10r "To be honest, I'm just happy that you actually wrote one." 
+    s 1d "It shows that you're taking this seriously."
+    mc "Of course."
+    mc "I may not be totally into it yet, but I'm still gonna put in some effort."
+    s 1q "Well it definitely shows."
+    s 1d "You didn't have to do this, you know."
+    s 1l "I mean...we both know why you decided to join."
+    s 7x "But it seems like you're really putting effort into writing..."
+    s 7d "And I appreciate that."
+    "It's true that I initially joined this club in the hopes of getting to know the others."
+    "But, I'd be lying if I said Satori had nothing to do with it."
+    "This club does mean a lot to him after all."
+    s 1d "And don't worry."
+    s 1y "I'll keep my word to help you impress whoever you're interested in."
+    s 1d "It'll be my way of thanking you."
+    mc "I'm gonna hold you to that."
+    s 1z "Haha, deal!"
+    s 1x "Anyway-- wanna read my poem now?"
+    s 10l "I'm, umm... not very good at this."
+    mc "I'll be the judge of that."
         return
 
 label ch1_s_med:
@@ -1375,8 +1374,27 @@ label ch1_s_good:
     mc "You're sweet, Satori."
     mc "You had no advice to offer and I've learned absolutely nothing about writing from this exchange..."
     mc "But you're very sweet."
-    jump ch1_s_shared
-
+    s 10r "Ahahaha! I'm just happy that you actually wrote one."
+    s 1d "It shows that you're taking this seriously."
+    mc "Of course."
+    mc "I may not be totally into it yet, but I'm still gonna put in some effort."
+    s 1q "Well it definitely shows."
+    s 1d "You didn't have to do this, you know."
+    s 1l "I mean...we both know why you decided to join."
+    s 7x "But it seems like you're really putting effort into writing..."
+    s 7d "And I appreciate that."
+    "It's true that I initially joined this club in the hopes of getting to know the others."
+    "But, I'd be lying if I said Satori had nothing to do with it."
+    "This club does mean a lot to him after all."
+    s 1d "And don't worry."
+    s 1y "I'll keep my word to help you impress whoever you're interested in."
+    s 1d "It'll be my way of thanking you."
+    mc "I'm gonna hold you to that."
+    s 1z "Haha, deal!"
+    s 1x "Anyway-- wanna read my poem now?"
+    s 10l "I'm, umm... not very good at this."
+    mc "I'll be the judge of that."
+    return
 
 label ch2_s_bad:
     s "..."
